@@ -4,40 +4,22 @@ import About from "../../Pages/About";
 import Projects from "../../Pages/Projects";
 import ErrorPage from "../../Pages/ErrorPage";
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-function Header(props) {
+function Header() {
     const names = ['Home', 'About', 'Projects'];
     const [active, setActive] = useState(names[0]);
-  // get prop experience
 
     function setSelected(name) {
         setActive(name);
 
-        // Manage THREEJS transitions
-        switch (name) {
-          case 'Projects':
-             experience.cameraProjects();
-              break;
-          case 'About':
-              experience.cameraAbout();
-              break;
-          case 'Home':
-              default:
-             experience.cameraDown();
-              break;
-      }
     }
-
-    // setExperience(props.experience);
-    const experience = props.experience;
 
     const isAboutSelected = active === 'About';
     const isHomeSelected = active === 'Home';
     const isProjectsSelected = active === 'Projects';
 
   return (
-    <>
     <Router>
       <header className="header" id="header">
         {/* Links */}
@@ -47,13 +29,13 @@ function Header(props) {
             <div className="header__innerBefore"></div>
             <ul className="header__list">
                 <li className={`header__item ${isAboutSelected ? "header__item--active" : ""} `}>
-                  <Link className="header__link" to="/about" onClick={() => setSelected('About')}> About </Link>
+                  <Link className="header__link" to="/about" onClick={() => setSelected('About')}> Contatti </Link>
                 </li>
                 <li className={`header__item ${isHomeSelected ? "header__item--active" : ""} `}>
-                  <Link className="header__link header__title" to="/" onClick={() => setSelected('Home')} > - Eleonora Toscano - </Link>
+                  <Link className="header__link header__title" to="/" onClick={() => setSelected('Home')} > - Beatrice Toscano - </Link>
                 </li>                
                 <li className={`header__item ${isProjectsSelected ? "header__item--active" : ""} `}>
-                  <Link className="header__link" to="/projects" onClick={() => setSelected('Projects')}> Projects </Link>
+                  <Link className="header__link" to="/projects" onClick={() => setSelected('Projects')}> Progetti </Link>
                 </li>              
             </ul>        
             <div className="header__innerAfter"></div>     
@@ -61,7 +43,7 @@ function Header(props) {
           <div className="header__after"></div>  
         </div>
       </header>
-      
+
       {/* Content */}
       <Routes>
         <Route path="/" element={<Home />} />
@@ -70,7 +52,6 @@ function Header(props) {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
-    </>
   );
 }
 

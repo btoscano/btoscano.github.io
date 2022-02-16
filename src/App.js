@@ -1,16 +1,26 @@
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
-import React from "react"
-import Header from "./Components/Header/Header"
+import "./Global/main.scss";
+
 
 function App() {
 
-    return (
-      <>
-        <div className="frame">
-          <Header />
-        </div>
-      </>
-    )
-  }
+  return (
+    <div className="app">
 
-  export { App }
+      <Header/>
+
+      <canvas className="webgl"></canvas>
+      {/* Some content that stays in all pages */}
+
+
+      {/* <Footer/> */}
+
+    </div>
+  );
+}
+
+export default App;
+
+

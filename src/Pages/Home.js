@@ -1,11 +1,14 @@
 
-import React from "react"
-
 function Home() {
   return  <div className="home">
-            <section className="section">
-                <h1 className="home__name">Eleonora Toscano</h1>
-                <p className="home__paragraph">some text in a paragraph</p>
+            <section className="section__first">
+            <div className="home__textWrapper">
+                    <h1 className="home__name">Beatrice Toscano</h1>
+                    <p className="home__paragraph">some text in a paragraph</p>
+                </div>
+                <div className="home__imgWrapper">
+                    <img className="home__img" src="BeatriceToscano.png"></img>
+                </div>
             </section>
             <section className="section">
                 <h2>My projects</h2>

@@ -1,12 +1,12 @@
-import ReactDOM from "react-dom"
-import React from "react"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-import "./styles.css"
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-import "./Global/reset.scss"
-import "./Global/variables.scss"
-import "./Global/main.scss"
 
-import { App } from "./App"
-
-ReactDOM.render(<App />, document.getElementById("root"))
