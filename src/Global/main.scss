@@ -1,0 +1,41 @@
+// Import Global
+@import "./reset.scss";
+@import "./variables.scss";
+
+// Import Modules
+@import "../Components/Header/Header.scss";
+@import "../Components/Footer/Footer.scss";
+
+
+// Import Pages
+@import "../Pages/Home.scss";
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.loading {
+    text-align: center;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none!important;
+  }
+
+  .loading__inner {
+    padding: 10px;
+    width: 100%;
+    min-width: 100%;
+  }
+
+// delete
+// .scrollArea *:nth-child(odd) {
+//     background-color: #ff000066;
+// }
+
+// .scrollArea *:nth-child(even) {
+//     background-color: #00ff0066;
+// }
