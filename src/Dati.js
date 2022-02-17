@@ -2,7 +2,53 @@ const data = {
   chisono: {
       paragrafo: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a."
   },
-  timeline: [
+  education: [
+    {
+      index: 0,
+      job: "Diploma di maturità classica",
+      joblink: "https://www.google.it",
+      employer: "Liceo Classico Cesare Beccaria di Milano",
+      date: "settembre 2009 - giugno 2014",
+      grade: "100/100"
+    },    
+    {
+      index: 1,
+      job: "Laurea triennale in Scienze Umanistiche per la Comunicazione",
+      joblink: "https://www.google.it",
+      employer: "Università degli Studi di Milano",
+      date: "settembre 2014 - dicembre 2017",
+      description: "Tesi in letteratura anglo-americana dal titolo “La corrispondenza di una crisi – Scott e Zelda Fitzgerald (1930-1938)”",
+      grade: "110/110 con lode"
+    },    
+    {
+      index: 2,
+      job: "Laurea magistrale in Editoria, Comunicazione e Moda: curriculum Editoria",
+      joblink: "https://www.google.it",
+      employer: "Università degli Studi di Milano",
+      date: "settembre 2017 - marzo 2020",
+      description: "Tesi in traduzione inglese dal titolo “Metalupi, unicorni e Primi Cavalieri - un’analisi della traduzione italiana di A Game of Thrones di George R.R. Martin”",
+      grade: "110/110 con lode"
+    },    
+    {
+      index: 3,
+      job: "Master di II livello Professione Editoria Cartacea e Digitale",
+      joblink: "https://www.google.it",
+      employer: "Università Cattolica di Milano",
+      date: "gennaio 2020 - giugno 2020",
+      description: "Corsi rilevanti:",
+      list: [
+        { index: 0, task: "Editing" },
+        { index: 1, task: "Correzione bozze" },
+        { index: 2, task: "Scrittura redazionale e creativa" },
+        { index: 3, task: "Marketing e comunicazione" },
+        { index: 4, task: "Traduzione" },
+        { index: 5, task: "Ufficio stampa" },
+        { index: 6, task: "Social media" },
+        { index: 7, task: "fffImpaginazioneffff" }
+      ]
+    }
+   ],
+  experience: [
     {
       index: 0,
       job: "Segretaria di Redazione e Assistente di Produzione",
@@ -83,8 +129,8 @@ const data = {
           { index: 0, task: "Creazione contenuti per il sito web, redazione di articoli" },
           { index: 1, task: "Correzione bozze" },
           { index: 2, task: "Gestione CMS" },
-          { index: 2, task: "Gestione delle partnership e delle relazioni con gli uffici stampa" },
-          { index: 2, task: "Organizzazione di interviste agli autori" }
+          { index: 3, task: "Gestione delle partnership e delle relazioni con gli uffici stampa" },
+          { index: 4, task: "Organizzazione di interviste agli autori" }
         ]
       }
   ]

@@ -64,12 +64,15 @@
 
 .entry__employer{
     @extend %h4;
-    font-size: rem(16px);
+    font-size: rem(20px);
     padding-bottom: 8px;
 
     &:hover{
         color: $color-link;
     }
+}
+.entry__grade, .entry__description{
+    padding-bottom: 8px;
 }
 
 .entry__link{
