@@ -30,7 +30,7 @@
 }
 
 .header__item{
-    width: 100%;
+    // width: 100%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -38,6 +38,11 @@
     height: 100%;
     background: $color-light-1;
     font-size: 1.175rem;
+    flex: 1;
+
+    &--title{
+        flex: 1.5;
+    }
 
     &--active{
         background: $color-light-2;
@@ -48,6 +53,9 @@
     padding: 16px;
     text-align: center;
 
+    outline: 4px solid $color-light-2;
+    outline-offset: -10px;
+    outline-style: double;
 }
 
 .header__title{

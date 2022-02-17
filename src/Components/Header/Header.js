@@ -30,10 +30,16 @@ function Header() {
             <ul className="header__list">
                 <li className={`header__item ${isAboutSelected ? "header__item--active" : ""} `}>
                   <Link className="header__link" to="/about" onClick={() => setSelected('About')}> Scrivimi </Link>
+                </li>                
+                <li className={`header__item ${isAboutSelected ? "header__item--active" : ""} `}>
+                  <Link className="header__link" to="/about" onClick={() => setSelected('About')}> Chi sono </Link>
                 </li>
-                <li className={`header__item ${isHomeSelected ? "header__item--active" : ""} `}>
+                <li className={`header__item header__item--title ${isHomeSelected ? "header__item--active" : ""} `}>
                   <Link className="header__link header__title" to="/" onClick={() => setSelected('Home')} > - Beatrice Toscano - </Link>
                 </li>                
+                <li className={`header__item ${isProjectsSelected ? "header__item--active" : ""} `}>
+                  <Link className="header__link" to="/projects" onClick={() => setSelected('Projects')}> Redazione </Link>
+                </li>    
                 <li className={`header__item ${isProjectsSelected ? "header__item--active" : ""} `}>
                   <Link className="header__link" to="/projects" onClick={() => setSelected('Projects')}> Progetti </Link>
                 </li>              
