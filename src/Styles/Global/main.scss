@@ -1,0 +1,28 @@
+// Import Global
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./typography_extends.scss";
+
+// Import Modules
+@import "../../Components/Header/Header.scss";
+@import "../../Components/Footer/Footer.scss";
+
+
+// Import Pages
+@import "../Pages/Home.scss";
+@import "../Pages/About.scss";
+
+
+body{
+    background-image: linear-gradient(to right, #ffebc2 35%, $color-white 35%);
+}
+
+// // REMOVE SCROLLBAR
+// body::-webkit-scrollbar {
+//     display: none;
+// }
+// body{
+//         -ms-overflow-style: none;  /* IE and Edge */
+//         scrollbar-width: none;  /* Firefox */
+// }

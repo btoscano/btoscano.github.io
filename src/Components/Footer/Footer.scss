@@ -1,0 +1,13 @@
+.footer{
+
+
+}
+
+.footer__wrapper{
+    height: 400px;
+    background-color: $color-brown-grey;
+    color: $color-white;
+    padding: 48px;
+
+    @extend %occhiello--small;
+}

@@ -1,7 +1,7 @@
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 
-import "./Global/main.scss";
+import "./Styles/Global/main.scss";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       {/* Some content that stays in all pages */}
 
 
-      {/* <Footer/> */}
+      <Footer/>
 
     </div>
   );

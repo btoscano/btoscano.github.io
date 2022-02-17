@@ -1,0 +1,67 @@
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    min-width: 200px;
+    width: 200px;
+    min-height: 200px;
+    height: 200px;
+}
+
+.section
+{
+    // background: #ffffff;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #0e0d0d;
+    // text-transform: uppercase;
+    font-size: 7vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section:nth-child(even)
+{
+    justify-content: flex-end;
+}
+
+.section__first{
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+
+.home{
+    margin-top: 80px;
+}
+
+.home__textWrapper{
+    // text-align: center;
+    padding: 32px;
+    flex: 65%;
+}
+
+.home__title{
+    @extend %h1;
+    margin-bottom: 32px;
+}
+
+.home__imgWrapper{
+    display: flex;
+    justify-content: center;
+    flex: 35%;
+}
+
+.home__img{
+    padding-top: 40px;
+    max-width: 70%;
+}

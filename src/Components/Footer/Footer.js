@@ -5,18 +5,20 @@ import ErrorPage from "../../Pages/ErrorPage";
 
 function Footer() {
   return (
-    <header className="footer">
-    <p>Footer!</p>
+    <footer className="footer">
+      <div className="footer__wrapper">
+        <p>Footer!</p>
 
-    <Router>
-        
-      <nav>
-        <Link to="/"> Footer Home Link</Link>
-        <Link to="/about">Footer About Link</Link>
-      </nav>
+        <Router>
+            
+          <nav>
+            <Link to="/"> Footer Home Link</Link>
+            <Link to="/about">Footer About Link</Link>
+          </nav>
 
-    </Router>
-  </header>
+        </Router>
+    </div>
+  </footer>
   );
 }
 

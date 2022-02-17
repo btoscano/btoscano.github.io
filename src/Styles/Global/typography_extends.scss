@@ -1,0 +1,239 @@
+// Extends typografici
+
+%body {
+  font-size: rem(24px);
+  color: $color-black;
+  font-family: $sansSerif;
+  font-weight: 400;
+  .pageWrapper--dark & {
+    color: $color-white;
+  }
+}
+%body--light {
+  @extend %body;
+  font-weight: 300;
+}
+
+%h1, 
+.h1 {
+  font-size: rem(48px);
+  font-family: $serif;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 0;
+  
+  &--left {
+    text-align: left;
+  }
+  .pageWrapper--dark & {
+    color: $color-white;
+  }
+  @include bp($m){
+    font-size: rem(64px);
+    line-height: 1.13;
+  }
+}
+
+%h2,
+.h2 {
+  font-size: rem(32px);
+  font-family: $serif;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.25;
+  @include bp($m){
+    line-height: 1.5;
+    font-size: rem(48px);
+  }
+}
+
+%h3,
+.h3 {
+  font-size: rem(32px);
+  font-family: $serif;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+  @include bp($m){
+    font-size: rem(40px);
+  }
+}
+
+%h4,
+.h4 {
+  font-size: rem(24px);
+  font-family: $serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.67;
+  @include bp($m){
+    line-height: 1.5;
+    font-size: rem(32px);
+  }
+}
+
+%h5,
+.h5 {
+  font-size: rem(18px);
+  font-family: $serif;
+  font-weight: 500;
+  margin: 0;
+  line-height: 2;
+  @include bp($m){
+    // line-height: 2.02;
+    font-size: rem(24px);
+  }
+}
+
+%h5--reg,
+.h5--reg {
+  @extend %h5;
+  font-weight: 400;
+}
+
+%jumbo,
+.jumbo {
+  font-size: rem(48px);  
+  line-height: 1.5;
+  font-family: $serif;
+  font-weight: 500;
+  margin: 0;
+  @include bp($m){
+    font-size: rem(88px);
+    line-height: 0.82;
+  }
+}
+
+%occhiello,
+.occhiello {
+  font-size: rem(14px);
+  line-height: normal;
+  letter-spacing: 1.56px;
+  font-family: $sansSerifCond;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  @include bp($m){
+    font-size: rem(18px);
+    letter-spacing: 2px;
+  }
+  &--left {
+    text-align: left;
+  }
+  &--darkgrey {
+    color: $color-brown-grey;
+  }
+  &--white {
+    color: $color-white;
+  }
+}
+%occhiello--left {
+  @extend %occhiello;
+  text-align: left;
+}
+
+%occhiello--reg,
+.occhiello--reg {
+  @extend %occhiello;
+  font-weight: 400;
+}
+
+%occhiello--small,
+.occhiello--small {
+  @extend %occhiello;
+  font-size: rem(14px);
+}
+%occhiello--light {
+  @extend %occhiello;
+  font-weight: 300;
+}
+
+%paragraph,
+.paragraph {
+  font-size: rem(20px);
+  font-family: $sansSerif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 2;
+}
+%paragraph--medium,
+.paragraph--medium {
+  @extend %paragraph;
+  font-weight: 500;
+}
+%paragraph--light,
+.paragraph--light {
+  @extend %paragraph;
+  font-weight: 300;
+}
+%paragraph--white,
+.paragraph--white {
+  @extend %paragraph;
+  color: $color-white;
+}
+%paragraph--grey,
+.paragraph--grey {
+  @extend %paragraph;
+  color: $color-brown-grey;
+}
+%paragraph--small,
+.paragraph--small {
+  @extend %paragraph;
+  font-size: rem(16px);
+  line-height: 28px;
+}
+%paragraph--smaller,
+.paragraph--smaller {
+  @extend %paragraph;
+  font-size: rem(14px);
+  font-weight: 300;
+  line-height: 24px;
+}
+
+%paragraph--serif,
+.paragraph--serif {
+  font-size: rem(16px);
+  line-height: 1.5;
+  font-family: $serif;
+  font-weight: 400;
+  @include bp($m) {
+    line-height: 1.33;
+    font-size: rem(18px);
+  }
+}
+
+%paragraph--serif--white,
+.paragraph--serif--white  {
+  @extend %paragraph--serif;
+  color: $color-white;
+}
+
+%paragraph--serif--grey,
+.paragraph--serif--grey  {
+  @extend %paragraph--serif;
+  color: $color-brown-grey;
+}
+
+%paragraph--serif--medium,
+.paragraph--serif--medium  {
+  @extend %paragraph--serif;
+  font-weight: 500;
+}
+
+%paragraph--serif--big,
+.paragraph--serif--big  {
+  @extend %paragraph--serif;
+  font-size: rem(20px);
+  line-height: 40px;
+  @include bp($m) {
+    font-size: rem(24px);
+    line-height: 48px;
+  }
+}
