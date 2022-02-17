@@ -4,12 +4,39 @@
 }
 
 .footer__wrapper{
-    height: 400px;
     background-color: $color-brown-grey;
     color: $color-white;
     padding: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 64px;
 
-    @extend %occhiello--small;
+    outline: 4px solid $color-light-2;
+    outline-offset: -32px;
+    outline-style: double;
+}
+
+.footer__leftWrapper{
+    padding: 32px;
+    flex: 65%;
+}
+
+
+.footer__rightWrapper{
+    padding: 32px;
+    display: flex;
+    justify-content: flex-end;
+    flex: 35%;
+}
+
+
+.footer__title{
+    @extend %h2;
+}
+.footer__paragraph{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .footer__socialList{

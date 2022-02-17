@@ -1,6 +1,6 @@
 
-function About() {
-  return <div className="about">
+function ChiSono() {
+  return <div className="chisono">
     
         <h1 className="h1">Example h1</h1>
         <h2 className="h2">Example h2</h2>
@@ -12,6 +12,7 @@ function About() {
         <div className="occhiello">Occhiello</div>
         <div className="occhiello--reg">Occhiello reg</div>
         <div className="occhiello--small">Occhiello small</div>
+        <div className="paragraph">paragraph</div>
         <div className="paragraph--light">paragraph light</div>
         <div className="paragraph--grey">paragraph grey</div>
         <div className="paragraph--white">paragraph white</div>
@@ -22,4 +23,4 @@ function About() {
   </div>;
 }
 
-export default About;
+export default ChiSono;

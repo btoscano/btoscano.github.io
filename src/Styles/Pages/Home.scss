@@ -34,7 +34,7 @@ section:nth-child(even)
 .home__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row-reverse;
 }
 
@@ -50,12 +50,20 @@ section:nth-child(even)
 }
 
 .home__title{
+    margin-top: 64px;
     @extend %h1;
     margin-bottom: 32px;
 }
 .home__paragraph{
     @extend %occhiello;
     margin-bottom: 32px;
+}
+.home__subParagraph{
+    @extend %paragraph--serif;
+    margin-bottom: 64px;
+    padding: 0 64px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .home__leftWrapper{
