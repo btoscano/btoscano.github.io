@@ -16,6 +16,12 @@
     display: flex;
 }
 
+.footer__link{
+    display: block;
+    margin-right: 16px;
+    height: 48px;
+}
+
 .footer__social{
     width: 24px;
     height: 24px;
@@ -30,7 +36,7 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
-    margin-right: 16px;
+
 
     &:hover, &:active {
         color: #FFF;

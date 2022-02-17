@@ -15,23 +15,23 @@ function Footer() {
         <nav>
           <ul className="footer__socialList"> 
           <li>
-              <a href="https://www.linkedin.com/in/beatrice-toscano/">
+              <a className='footer__link' href="https://www.linkedin.com/in/beatrice-toscano/">
               <FontAwesomeIcon className="footer__social footer__social--linkedin" icon={faLinkedinIn} />
               </a>
             </li>           
             {/* <li>
-              <a href="https://it-it.facebook.com/beatrice.toscano">
+              <a className='footer__link' href="https://it-it.facebook.com/beatrice.toscano">
                 <FontAwesomeIcon className="footer__social footer__social--facebook" icon={faFacebookF} />
               </a>
             </li>  */}
             <li>
               {/* TODO link */}
-              <a href="#">
+              <a className='footer__link' href="#">
               <FontAwesomeIcon className="footer__social footer__social--messenger" icon={faFacebookMessenger} />
               </a>
             </li> 
             <li>
-              <a href="mailto:btoscano95@gmail.com">
+              <a className='footer__link' href="mailto:btoscano95@gmail.com">
               <FontAwesomeIcon className="footer__social footer__social--email" icon={faEnvelope} />
               </a>
             </li> 

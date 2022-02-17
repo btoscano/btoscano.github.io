@@ -17,9 +17,6 @@
     margin-right: auto;
 }
 
-.header__nav{
-
-}
 
 .header__list{
     display: flex;
@@ -56,6 +53,10 @@
     outline: 4px solid $color-light-2;
     outline-offset: -10px;
     outline-style: double;
+    
+    &:focus {
+        outline: 2px solid blue;
+      }
 }
 
 .header__title{
