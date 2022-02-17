@@ -54,6 +54,9 @@ section:nth-child(even)
     @extend %h1;
     margin-bottom: 32px;
 }
+.home__paragraph{
+    @extend %paragraph--serif;
+}
 
 .home__imgWrapper{
     display: flex;
