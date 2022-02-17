@@ -9,12 +9,11 @@ import ErrorPage from "../../Pages/ErrorPage";
 import { useState } from 'react';
 
 function Header() {
-    const names = ['Home', 'About', 'Projects'];
+    const names = ['Home', 'Scrivimi', 'Progetti', 'Chi sono', 'Redazione'];
     const [active, setActive] = useState(names[0]);
 
     function setSelected(name) {
         setActive(name);
-
     }
 
     const scrivimi = active === 'Scrivimi';

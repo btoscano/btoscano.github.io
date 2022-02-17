@@ -53,6 +53,7 @@ section:nth-child(even)
     margin-top: 64px;
     @extend %h1;
     margin-bottom: 32px;
+    @extend %tracking-in-expand;
 }
 .home__paragraph{
     @extend %occhiello;
