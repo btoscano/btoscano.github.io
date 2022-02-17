@@ -29,7 +29,7 @@ function Header() {
             <div className="header__innerBefore"></div>
             <ul className="header__list">
                 <li className={`header__item ${isAboutSelected ? "header__item--active" : ""} `}>
-                  <Link className="header__link" to="/about" onClick={() => setSelected('About')}> Contatti </Link>
+                  <Link className="header__link" to="/about" onClick={() => setSelected('About')}> Scrivimi </Link>
                 </li>
                 <li className={`header__item ${isHomeSelected ? "header__item--active" : ""} `}>
                   <Link className="header__link header__title" to="/" onClick={() => setSelected('Home')} > - Beatrice Toscano - </Link>
