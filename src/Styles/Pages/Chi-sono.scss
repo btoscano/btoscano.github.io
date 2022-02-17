@@ -26,6 +26,13 @@
     margin-bottom: 32px;
     @extend %tracking-in-expand;
 }
+
+.chisono__experience{
+    @extend %h2;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
 .chisono__paragraph{
     @extend %paragraph--serif;
     margin-bottom: 32px;

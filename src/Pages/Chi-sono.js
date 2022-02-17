@@ -1,7 +1,8 @@
 import data from "../Dati";
 
 function Timeline() {
-  return data.timeline.map((entry) => (
+  // return data.timeline.map((entry) => (
+  return [...data.timeline].reverse().map((entry) => (
     <div className="entry__wrapper" key={entry.index}>
       <h2 className="entry__job">{entry.job}</h2>
       <p className="entry__employer">{entry.employer}</p>
@@ -35,6 +36,7 @@ function ChiSono() {
             euismod mi nunc, ut vehicula lorem fermentum a.
           </p>
 
+          <h2 className="chisono__experience">Esperienza</h2>
           <Timeline />
         </div>
 
