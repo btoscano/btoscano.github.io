@@ -12,6 +12,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
+    margin-bottom: 64px;
 }
 
 .chisono__rightWrapper{
@@ -49,8 +50,11 @@
 }
 
 .entry__wrapper{
-    padding: 0 64px;
-    margin-bottom: 32px;
+    padding: 32px 64px;
+    margin-bottom: 64px;
+
+    outline: 4px solid $color-light-2;
+    outline-style: double;
 }
 
 .entry__job{
@@ -61,7 +65,15 @@
 .entry__employer{
     @extend %h4;
     font-size: rem(16px);
-    margin-bottom: 8px;
+    padding-bottom: 8px;
+
+    &:hover{
+        color: $color-link;
+    }
+}
+
+.entry__link{
+    padding: 16px 0;
 }
 
 .entry__date{

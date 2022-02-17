@@ -5,7 +5,7 @@ function Timeline() {
   return [...data.timeline].reverse().map((entry) => (
     <div className="entry__wrapper" key={entry.index}>
       <h2 className="entry__job">{entry.job}</h2>
-      <p className="entry__employer">{entry.employer}</p>
+      <p className="entry__employer"><a className="entry__link" href={entry.joblink}> {entry.employer}</a></p>
       <p className="entry__date">
         <span>{entry.date}</span>
       </p>
@@ -26,14 +26,7 @@ function ChiSono() {
         <div className="chisono__rightWrapper">
           <h1 className="chisono__title">Chi sono</h1>
           <p className="chisono__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet
-            nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit
-            dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,
-            eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada
-            convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit
-            ligula, vel semper est dolor a nulla. Donec eu blandit metus.
-            Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc
-            euismod mi nunc, ut vehicula lorem fermentum a.
+          {data.chisono.paragrafo}
           </p>
 
           <h2 className="chisono__experience">Esperienza</h2>
