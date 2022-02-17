@@ -1,3 +1,23 @@
+import data from "../Dati";
+
+function Timeline() {
+  return data.timeline.map((entry) => (
+    <div className="entry__wrapper" key={entry.index}>
+      <h2 className="entry__job">{entry.job}</h2>
+      <p className="entry__employer">{entry.employer}</p>
+      <p className="entry__date">
+        <span>{entry.date}</span>
+      </p>
+
+      <ul className="entry__list">
+        {entry.list.map((listitem) => (
+          <li className="entry__item" key={listitem.index}>{listitem.task}</li>
+        ))}
+      </ul>
+    </div>
+  ));
+}
+
 function ChiSono() {
   return (
     <div className="chisono">
@@ -15,26 +35,9 @@ function ChiSono() {
             euismod mi nunc, ut vehicula lorem fermentum a.
           </p>
 
-          <div className="entry__wrapper">
-            <h2 className="entry__job">Redattrice</h2>
-            <p className="entry__employer">laFeltrinelli - IBS.it</p>
-            <p className="entry__date"><span>giugno 2021 - oggi</span></p>
-
-            <ul className="entry__list">
-              <li className="entry__item">
-                 Creazione contenuti per il sito web, redazione di articoli
-              </li>
-              <li className="entry__item">Correzione bozze</li>
-              <li className="entry__item">Gestione CMS</li>
-              <li className="entry__item">
-                 Gestione delle partnership e delle relazioni con gli uffici                stampa
-              </li>
-              <li className="entry__item">
-                Organizzazione di interviste agli autori
-              </li>
-            </ul>
-          </div>
+          <Timeline />
         </div>
+
         <div className="chisono__leftWrapper"></div>
       </section>
     </div>
