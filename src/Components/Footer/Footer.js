@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // import '@fortawesome/free-brands-svg-icons'
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
+// import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons/faFacebookMessenger';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
@@ -16,6 +16,11 @@ function Footer() {
             <p className='footer__title'> Beatrice Toscano</p>
             <p className='footer__subtitle'> {data.footer.subtitle}</p>
             <p className='footer__paragraph'>{data.footer.description}</p>
+
+            <a className='footer__copyright' href="https://github.com/etoscano">
+            Copyright © {(new Date().getFullYear())}, etoscano. All rights reserved.
+            </a>
+
         </div>
         <div className="footer__rightWrapper">
           <nav>

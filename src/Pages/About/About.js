@@ -35,9 +35,11 @@ function Timeline({source}) {
 function About() {
   const experience = useRef(null)
   const education = useRef(null)
+  const acknowledgements = useRef(null)
 
   const educationScroll = () => education.current.scrollIntoView()
   const experienceScroll = () => experience.current.scrollIntoView()    
+  const acknowledgementsScroll = () => acknowledgements.current.scrollIntoView()    
 
   return (
     <div className="about">
@@ -53,6 +55,9 @@ function About() {
             </li>                
             <li className={`about__item`}>
             <button className="about__button" onClick={educationScroll}> Formazione </button> 
+            </li> 
+            <li className={`about__item`}>
+            <button className="about__button" onClick={acknowledgementsScroll}> Riconoscimenti </button> 
             </li>                
           </ul> 
 
@@ -75,6 +80,11 @@ function About() {
           <div className="about__section"  ref={education}>
             <h2 className="about__sectionTitle">Formazione</h2>
             <Timeline source={data.education}/>
+          </div>          
+          
+          <div className="about__section"  ref={acknowledgements}>
+            <h2 className="about__sectionTitle">Riconoscimenti</h2>
+            <Timeline source={data.acknowledgements}/>
           </div>
 
         </div>

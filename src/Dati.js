@@ -50,6 +50,23 @@ const data = {
       img2: "img_2.jpeg",
       img3: "img_3.jpeg"
   },
+  acknowledgements: [
+    {
+      index: 0,
+      job: "Vincitrice della XII edizione del Certamen Latinum",
+      joblink: "https://www.google.it",
+      employer: "Ortezzano (FM) - Certamen in onore del professor Giuseppe Carboni",
+      date: "14 marzo 2014"
+    },
+    {
+      index: 1,
+      job: "Relatrice",
+      joblink: "https://www.google.it",
+      employer: "Cives Universi - Centro Internazionale di Cultura",
+      date: "27 novembre 2018",
+      description: "Intervento alla conferenza “F.Scott Fitzgerald - La presenza in Europa dello scrittore statunitense” organizzata da Cives Universi - Centro Internazio- nale di Cultura con un intervento dal titolo “Il soggiorno europeo e le radici della crisi personale e coniugale dei Fitzgerald”"
+    }  
+  ],
   education: [
     {
       index: 0,

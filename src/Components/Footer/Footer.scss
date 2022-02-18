@@ -39,6 +39,11 @@
 .footer__paragraph{
     text-align: justify;
     text-justify: inter-word;
+    margin-bottom: 32px;
+}
+
+.footer__copyright{
+    @extend %paragraph--smaller;
 }
 
 .footer__socialList{
