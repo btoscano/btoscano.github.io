@@ -1,21 +1,21 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "../../Pages/Home";
-import Scrivimi from "../../Pages/Scrivimi";
-import ChiSono from "../../Pages/Chi-sono";
-import Progetti from "../../Pages/Projects";
+import Home from "../../Pages/Home/Home";
+import Contact from "../../Pages/Contact/Contact";
+import About from "../../Pages/About/About";
+import Projects from "../../Pages/Projects/Projects";
 import Redazione from "../../Pages/Redazione";
 import ErrorPage from "../../Pages/ErrorPage";
 
 import { useState, useEffect } from 'react';
 
 function Header() {
-    const names = ['home', 'scrivimi', 'progetti', 'chi-sono', 'redazione'];
+    const names = ['home', 'contact', 'projects', 'chi-sono', 'redazione'];
     const [active, setActive] = useState(names[0]);
     const [flag, setFlag] = useState(true);
-    const scrivimi = active === 'scrivimi';
+    const contact = active === 'contact';
     const home = active === 'home';
-    const progetti = active === 'progetti';
-    const chiSono = active === 'chi-sono';
+    const projects = active === 'projects';
+    const about = active === 'chi-sono';
     const redazione = active === 'redazione';
 
     if (flag){
@@ -38,10 +38,10 @@ function Header() {
             <div className="header__innerBefore"></div>
             <ul className="header__list">
                 <li className={`header__item `}>
-                  <Link className={`header__link ${scrivimi ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('scrivimi')}> Scrivimi </Link>
+                  <Link className={`header__link ${contact ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('contact')}> Scrivimi </Link>
                 </li>                
                 <li className={`header__item `}>
-                  <Link className={`header__link ${chiSono ? "header__link--active" : ""} `} to="/chi-sono" onClick={() => setSelected('chi-sono')}> Chi sono </Link>
+                  <Link className={`header__link ${about ? "header__link--active" : ""} `} to="/chi-sono" onClick={() => setSelected('about')}> Chi sono </Link>
                 </li>
                 <li className={`header__item header__item--title `}>
                   <Link className={`header__link header__title ${home ? "header__link--active" : ""} `}  to="/" onClick={() => setSelected('home')} > - Beatrice Toscano - </Link>
@@ -50,7 +50,7 @@ function Header() {
                   <Link className={`header__link ${redazione ? "header__link--active" : ""} `} to="/redazione" onClick={() => setSelected('redazione')}> Redazione </Link>
                 </li>    
                 <li className={`header__item `}>
-                  <Link className={`header__link ${progetti ? "header__link--active" : ""} `} to="/progetti" onClick={() => setSelected('progetti')}> Progetti </Link>
+                  <Link className={`header__link ${projects ? "header__link--active" : ""} `} to="/progetti" onClick={() => setSelected('projects')}> Progetti </Link>
                 </li>              
             </ul>        
             <div className="header__innerAfter"></div>     
@@ -62,9 +62,9 @@ function Header() {
       {/* Content */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/scrivimi" element={<Scrivimi />} />
-        <Route path="/chi-sono" element={<ChiSono />} />
-        <Route path="/progetti" element={<Progetti />} />
+        <Route path="/scrivimi" element={<Contact />} />
+        <Route path="/chi-sono" element={<About />} />
+        <Route path="/progetti" element={<Projects />} />
         <Route path="/redazione" element={<Redazione />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
