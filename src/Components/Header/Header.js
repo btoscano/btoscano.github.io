@@ -6,21 +6,31 @@ import Progetti from "../../Pages/Projects";
 import Redazione from "../../Pages/Redazione";
 import ErrorPage from "../../Pages/ErrorPage";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 function Header() {
-    const names = ['Home', 'Scrivimi', 'Progetti', 'Chi sono', 'Redazione'];
+    const names = ['home', 'scrivimi', 'progetti', 'chi-sono', 'redazione'];
     const [active, setActive] = useState(names[0]);
+    const [flag, setFlag] = useState(true);
+    const scrivimi = active === 'scrivimi';
+    const home = active === 'home';
+    const progetti = active === 'progetti';
+    const chiSono = active === 'chi-sono';
+    const redazione = active === 'redazione';
+    
+    console.log(scrivimi)
+    console.log(active)
+    
+
+    if (flag){
+      setActive(window.location.href.substring(window.location.href.lastIndexOf('/') + 1))
+      setFlag(false)
+    }
 
     function setSelected(name) {
         setActive(name);
     }
 
-    const scrivimi = active === 'Scrivimi';
-    const home = active === 'Home';
-    const progetti = active === 'Progetti';
-    const chiSono = active === 'Chi sono';
-    const redazione = active === 'Redazione';
 
   return (
     <Router>
@@ -32,19 +42,19 @@ function Header() {
             <div className="header__innerBefore"></div>
             <ul className="header__list">
                 <li className={`header__item `}>
-                  <Link className={`header__link ${scrivimi ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('Scrivimi')}> Scrivimi </Link>
+                  <Link className={`header__link ${scrivimi ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('scrivimi')}> Scrivimi </Link>
                 </li>                
                 <li className={`header__item `}>
-                  <Link className={`header__link ${chiSono ? "header__link--active" : ""} `} to="/chi-sono" onClick={() => setSelected('Chi sono')}> Chi sono </Link>
+                  <Link className={`header__link ${chiSono ? "header__link--active" : ""} `} to="/chi-sono" onClick={() => setSelected('chi-sono')}> Chi sono </Link>
                 </li>
                 <li className={`header__item header__item--title `}>
-                  <Link className={`header__link header__title ${home ? "header__link--active" : ""} `}  to="/" onClick={() => setSelected('Home')} > - Beatrice Toscano - </Link>
+                  <Link className={`header__link header__title ${home ? "header__link--active" : ""} `}  to="/" onClick={() => setSelected('home')} > - Beatrice Toscano - </Link>
                 </li>                
                 <li className={`header__item `}>
-                  <Link className={`header__link ${redazione ? "header__link--active" : ""} `} to="/redazione" onClick={() => setSelected('Redazione')}> Redazione </Link>
+                  <Link className={`header__link ${redazione ? "header__link--active" : ""} `} to="/redazione" onClick={() => setSelected('redazione')}> Redazione </Link>
                 </li>    
                 <li className={`header__item `}>
-                  <Link className={`header__link ${progetti ? "header__link--active" : ""} `} to="/progetti" onClick={() => setSelected('Progetti')}> Progetti </Link>
+                  <Link className={`header__link ${progetti ? "header__link--active" : ""} `} to="/progetti" onClick={() => setSelected('progetti')}> Progetti </Link>
                 </li>              
             </ul>        
             <div className="header__innerAfter"></div>     

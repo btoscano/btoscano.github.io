@@ -6,14 +6,16 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons/faFacebookMessenger';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 
+import data from "../../Dati";
+
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer__wrapper">
         <div className="footer__leftWrapper">
             <p className='footer__title'> Beatrice Toscano</p>
-            <p className='footer__paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. 
-            </p>
+            <p className='footer__subtitle'> {data.footer.subtitle}</p>
+            <p className='footer__paragraph'>{data.footer.description}</p>
         </div>
         <div className="footer__rightWrapper">
           <nav>

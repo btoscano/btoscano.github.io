@@ -60,30 +60,31 @@
     }
 }
 
-.projects__firstSection, .projects__secondSection, .projects__thirdSection{
+.projects__section{
     padding: 32px;
     display: flex;
     -webkit-box-shadow: 0px 0px 10px 5px rgba(68,65,59,0.1); 
     box-shadow: 0px 0px 10px 5px rgba(68,65,59,0.1);
     margin-bottom: 48px;
 }
-.projects__firstSection__left{
+.projects__section:nth-child(even)
+{
+    flex-direction: row-reverse;
+}
+
+.projects__section__left{
     padding: 32px;
     flex: 1.5;
     text-align: justify;
     text-justify: inter-word;
 }
 
-.projects__firstSection__right{
+.projects__section__right{
     padding: 16px;
     flex: 1;
 }
 
-.projects__secondSection{
-    flex-direction: row-reverse;
-}
-
-.projects__firstSection_title{
+.projects__section_title{
     @extend %h5;
     margin-bottom: 16px;
 }

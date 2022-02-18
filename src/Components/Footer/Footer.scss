@@ -1,5 +1,7 @@
-.footer{
-
+.footer__subtitle{
+    @extend %occhiello--small;
+    @extend %occhiello--left;
+    margin-bottom: 32px;
 
 }
 
