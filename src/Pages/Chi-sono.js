@@ -42,6 +42,22 @@ function ChiSono() {
   return (
     <div className="chisono">
       <section className="chisono__wrapper">
+
+          <div className="chisono__leftWrapper">
+
+          <img className="home__img" src={data.chisono.img}></img>
+
+          <ul className="chisono__list">
+            <li className={`chisono__item `}>
+            <button className="chisono__button" onClick={experienceScroll}> Esperienza </button> 
+            </li>                
+            <li className={`chisono__item`}>
+            <button className="chisono__button" onClick={educationScroll}> Formazione </button> 
+            </li>                
+          </ul> 
+
+        </div>
+
         <div className="chisono__rightWrapper">
           <h1 className="chisono__title">Chi sono</h1>
           <p className="chisono__paragraph">{data.chisono.paragrafo}</p>
@@ -60,21 +76,6 @@ function ChiSono() {
             <h2 className="chisono__sectionTitle">Formazione</h2>
             <Timeline source={data.education}/>
           </div>
-
-        </div>
-
-        <div className="chisono__leftWrapper">
-
-        <img className="home__img" src={data.chisono.img}></img>
-
-          <ul className="chisono__list">
-            <li className={`chisono__item `}>
-            <button className="chisono__button" onClick={experienceScroll}> Esperienza </button> 
-            </li>                
-            <li className={`chisono__item`}>
-            <button className="chisono__button" onClick={educationScroll}> Formazione </button> 
-            </li>                
-          </ul> 
 
         </div>
 

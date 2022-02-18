@@ -26,6 +26,13 @@ function Projects() {
   return (
     <div className="projects">
       <section className="projects__wrapper">
+
+        <div className="projects__leftWrapper">
+
+          <img className="projects__img" src="BeatriceToscano.png"></img>
+
+        </div>
+
         <div className="projects__rightWrapper">
          
           <h1 className="projects__title">Progetti</h1>
@@ -34,12 +41,6 @@ function Projects() {
 
         </div>
 
-        <div className="projects__leftWrapper">
-
-          <img className="projects__img" src="BeatriceToscano.png"></img>
-
-        </div>
-        
       </section>
     </div>
   );
