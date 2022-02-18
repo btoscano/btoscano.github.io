@@ -12,6 +12,7 @@ function Redazione() {
         <div className="occhiello">Occhiello</div>
         <div className="occhiello--reg">Occhiello reg</div>
         <div className="occhiello--small">Occhiello small</div>
+        <div className="occhiello--verySmall">Occhiello verySmall</div>
         <div className="paragraph">paragraph</div>
         <div className="paragraph--light">paragraph light</div>
         <div className="paragraph--grey">paragraph grey</div>

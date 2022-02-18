@@ -10,7 +10,7 @@
 .chisono__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
     flex-direction: row-reverse;
     margin-bottom: 64px;
 }
@@ -28,25 +28,30 @@
     @extend %tracking-in-expand;
 }
 
-.chisono__experience{
+.chisono__sectionTitle{
     @extend %h2;
-    margin-top: 32px;
-    margin-bottom: 32px;
     text-align: center;
 }
+.chisono__section{
+    padding-top: 80px;
+    // margin-bottom: 32px;
+}
+
 .chisono__paragraph{
     @extend %paragraph--serif;
     margin-bottom: 32px;
     padding: 0 64px;
     text-align: justify;
     text-justify: inter-word;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .chisono__leftWrapper{
     display: flex;
-    justify-content: center;
-    flex: 35%;
+    justify-content: flex-start;
+    flex: 35% 1;
+    flex-direction: column;
+    align-items: center;
 }
 
 .entry__wrapper{
@@ -80,7 +85,7 @@
 }
 
 .entry__date{
-    @extend %occhiello--small;
+    @extend %occhiello--verySmall;
     position: absolute;
     right: 65%;
     margin-right: 32px;
@@ -106,4 +111,88 @@
         font-size: rem(12px);
         margin-right: 8px;
     }
+}
+
+
+.chisono__item{
+    margin-bottom: 16px;
+    position: relative;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+
+    &:hover{
+        opacity: 0.5;
+    }
+
+	&:after,
+	&:before {
+		content: " ";
+		display: block;
+		position: absolute;
+		bottom: -.5em;
+		width: 1em;
+		height: 100%;
+		background-color: lighten($color-brown-grey,10);
+		pointer-events:none;
+	}
+
+	&:after {
+		right: -.57em;
+		z-index: -1;
+	}
+
+	&:before {
+		bottom: auto;
+		top: -.5em;
+		left: -.57em;
+		z-index: -1;
+	}
+
+}
+
+.chisono__button{
+    width: 150px;
+    font-size: rem(20px);
+    line-height: rem(28px);
+    display: inline-block;
+    position: relative;
+    padding: .15em .75em;
+    text-decoration: none;
+    color: darken($color-white,0);
+    background-color: lighten($color-brown-grey,20);
+
+
+    &:after,
+    &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: -.5em;
+        left: -.05em;
+        pointer-events: none;
+        -webkit-mask: none;
+    }
+
+    &:before {
+        bottom: auto;
+        top: -.5em;
+        border-bottom: .5em solid darken($color-brown-grey,10);
+        border-left: .5em solid transparent;
+    }
+
+    &:after {
+        left:  auto;
+        right: -.05em;
+        border-top: .5em solid darken($color-brown-grey,10);
+        border-right: .5em solid transparent;
+    }
+}
+
+.chisono__list{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
 }

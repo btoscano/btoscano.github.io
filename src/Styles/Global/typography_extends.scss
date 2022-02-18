@@ -150,6 +150,12 @@
   @extend %occhiello;
   font-size: rem(14px);
 }
+
+%occhiello--verySmall,
+.occhiello--verySmall {
+  @extend %occhiello;
+  font-size: rem(12px);
+}
 %occhiello--light {
   @extend %occhiello;
   font-weight: 300;
