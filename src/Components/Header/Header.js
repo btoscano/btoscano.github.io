@@ -17,10 +17,6 @@ function Header() {
     const progetti = active === 'progetti';
     const chiSono = active === 'chi-sono';
     const redazione = active === 'redazione';
-    
-    console.log(scrivimi)
-    console.log(active)
-    
 
     if (flag){
       setActive(window.location.href.substring(window.location.href.lastIndexOf('/') + 1))

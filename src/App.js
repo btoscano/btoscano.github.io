@@ -7,6 +7,7 @@ import "./Styles/Global/main.scss";
 function App() {
 
   return (
+    <>
     <div className="app">
 
       <Header/>
@@ -14,10 +15,11 @@ function App() {
       <canvas className="webgl"></canvas>
       {/* Some content that stays in all pages */}
 
-
-      <Footer/>
-
     </div>
+
+    <Footer/>
+    
+    </>
   );
 }
 

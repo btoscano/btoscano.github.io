@@ -46,6 +46,12 @@ function ChiSono() {
           <h1 className="chisono__title">Chi sono</h1>
           <p className="chisono__paragraph">{data.chisono.paragrafo}</p>
 
+          <div className="chisono__images" >
+          <img className="home__imgItem" src={data.chisono.img1}></img>
+          <img className="home__imgItem" src={data.chisono.img2}></img>
+          <img className="home__imgItem" src={data.chisono.img3}></img>
+          </div>  
+
           <div className="chisono__section" ref={experience}>
             <h2 className="chisono__sectionTitle">Esperienza</h2>
             <Timeline source={data.experience}/>

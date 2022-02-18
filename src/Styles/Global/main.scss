@@ -19,7 +19,8 @@
 
 
 body{
-    background-image: linear-gradient(to right, $color-light-2 35%, $color-white 35%);
+    // background-image: linear-gradient(to right, $color-light-2 35%, $color-white 35%);
+    background-color: $color-white;
 }
 
 // // REMOVE SCROLLBAR
@@ -30,3 +31,9 @@ body{
 //         -ms-overflow-style: none;  /* IE and Edge */
 //         scrollbar-width: none;  /* Firefox */
 // }
+
+.app{
+    max-width: 1440px;
+    margin: auto;
+    background-image: linear-gradient(to right, $color-light-2 35%, $color-white 35%);
+}
