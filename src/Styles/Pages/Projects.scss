@@ -60,27 +60,38 @@
     }
 }
 
+
+.projects__list{
+    margin: 0 32px;
+}
+
 .projects__section{
     padding: 32px;
     display: flex;
     -webkit-box-shadow: 0px 0px 10px 5px rgba(68,65,59,0.1); 
     box-shadow: 0px 0px 10px 5px rgba(68,65,59,0.1);
     margin-bottom: 48px;
-}
-.projects__section:nth-child(even)
-{
-    flex-direction: row-reverse;
+
+    &:nth-child(even)
+    {
+        flex-direction: row-reverse;
+        
+        .projects__section__right
+        {
+            margin-left: 0;
+            margin-right: 32px;
+        }
+    }
 }
 
 .projects__section__left{
-    padding: 32px;
     flex: 1.5;
     text-align: justify;
     text-justify: inter-word;
 }
 
 .projects__section__right{
-    padding: 16px;
+    margin-left: 32px;
     flex: 1;
 }
 
