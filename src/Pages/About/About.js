@@ -63,9 +63,9 @@ function About() {
           <p className="about__paragraph">{data.about.paragrafo}</p>
 
           <div className="about__images" >
-          <img className="home__imgItem" src={data.about.img1}></img>
-          <img className="home__imgItem" src={data.about.img2}></img>
-          <img className="home__imgItem" src={data.about.img3}></img>
+          <img className="about__imgItem" src={data.about.img1}></img>
+          <img className="about__imgItem" src={data.about.img2}></img>
+          <img className="about__imgItem" src={data.about.img3}></img>
           </div>  
 
           <div className="about__section" ref={experience}>
