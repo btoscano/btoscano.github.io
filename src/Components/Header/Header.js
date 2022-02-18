@@ -31,20 +31,20 @@ function Header() {
           <nav className="header__nav">
             <div className="header__innerBefore"></div>
             <ul className="header__list">
-                <li className={`header__item ${scrivimi ? "header__item--active" : ""} `}>
-                  <Link className="header__link" to="/scrivimi" onClick={() => setSelected('Scrivimi')}> Scrivimi </Link>
+                <li className={`header__item `}>
+                  <Link className={`header__link ${scrivimi ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('Scrivimi')}> Scrivimi </Link>
                 </li>                
-                <li className={`header__item ${chiSono ? "header__item--active" : ""} `}>
-                  <Link className="header__link" to="/chi-sono" onClick={() => setSelected('Chi sono')}> Chi sono </Link>
+                <li className={`header__item `}>
+                  <Link className={`header__link ${chiSono ? "header__link--active" : ""} `} to="/chi-sono" onClick={() => setSelected('Chi sono')}> Chi sono </Link>
                 </li>
-                <li className={`header__item header__item--title ${home ? "header__item--active" : ""} `}>
-                  <Link className="header__link header__title" to="/" onClick={() => setSelected('Home')} > - Beatrice Toscano - </Link>
+                <li className={`header__item header__item--title `}>
+                  <Link className={`header__link header__title ${home ? "header__link--active" : ""} `}  to="/" onClick={() => setSelected('Home')} > - Beatrice Toscano - </Link>
                 </li>                
-                <li className={`header__item ${redazione ? "header__item--active" : ""} `}>
-                  <Link className="header__link" to="/redazione" onClick={() => setSelected('Redazione')}> Redazione </Link>
+                <li className={`header__item `}>
+                  <Link className={`header__link ${redazione ? "header__link--active" : ""} `} to="/redazione" onClick={() => setSelected('Redazione')}> Redazione </Link>
                 </li>    
-                <li className={`header__item ${progetti ? "header__item--active" : ""} `}>
-                  <Link className="header__link" to="/progetti" onClick={() => setSelected('Progetti')}> Progetti </Link>
+                <li className={`header__item `}>
+                  <Link className={`header__link ${progetti ? "header__link--active" : ""} `} to="/progetti" onClick={() => setSelected('Progetti')}> Progetti </Link>
                 </li>              
             </ul>        
             <div className="header__innerAfter"></div>     

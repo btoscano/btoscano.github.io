@@ -40,23 +40,23 @@
     &--title{
         flex: 1.5;
     }
-
-    &--active{
-        background: $color-light-2;
-    }
 }
 
 .header__link{
     padding: 16px;
     text-align: center;
 
-    outline: 4px solid $color-light-2;
+    outline: 4px solid $color-white;
     outline-offset: -10px;
     outline-style: double;
     
     &:focus-visible {
         outline: 2px solid blue;
-      }
+    }
+
+    &--active{
+        outline-color: $color-brown-grey;
+    }
 }
 
 .header__title{

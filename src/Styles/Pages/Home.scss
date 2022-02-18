@@ -1,16 +1,4 @@
 
-.webgl
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
-    min-width: 200px;
-    width: 200px;
-    min-height: 200px;
-    height: 200px;
-}
-
 .section
 {
     // background: #ffffff;
@@ -55,16 +43,22 @@ section:nth-child(even)
     margin-bottom: 32px;
     @extend %tracking-in-expand;
 }
-.home__paragraph{
+.home__subtitle{
     @extend %occhiello;
     margin-bottom: 32px;
 }
-.home__subParagraph{
+.home__description{
     @extend %paragraph--serif;
     margin-bottom: 64px;
     padding: 0 64px;
     text-align: justify;
     text-justify: inter-word;
+}
+.home__quote{
+    @extend %jumbo;
+    padding: 0 64px;
+    text-align: center;
+    line-height: rem(64px);
 }
 
 .home__leftWrapper{
