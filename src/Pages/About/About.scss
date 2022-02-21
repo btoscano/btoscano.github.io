@@ -67,10 +67,14 @@
 .entry__wrapper{
     position: relative;
     padding: 32px 64px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 
     outline: 4px solid $color-light-2;
     outline-style: double;
+
+    &:hover{
+        outline-color: $color-link;
+    }
 }
 
 .entry__job{
@@ -89,6 +93,10 @@
 }
 .entry__grade, .entry__description{
     padding-bottom: 8px;
+}
+
+.entry__grade{
+    font-weight: 600;
 }
 
 .entry__link{

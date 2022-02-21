@@ -45,13 +45,77 @@
     padding: 0 64px;
 }
 
+// .contact__link{
+//     border-radius: 50;
+//     padding: 16px;
+//     // background-color: yellow;
+//     background-color: $color-light-2;
+// }
+
+// .contact__social{
+//     margin-right: 16px;
+// }
+
+
+
+.contact__socialList{
+    display: flex;
+    justify-content: center;
+}
+
 .contact__link{
-    border-radius: 50;
-    padding: 16px;
-    // background-color: yellow;
-    background-color: $color-light-2;
+    display: block;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    @extend %occhiello--small;
 }
 
 .contact__social{
-    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    line-height: 50px;
+    text-align: center;
+    color: #FFF;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border-radius: 50%;
+
+
+    &:hover, &:active {
+        color: #FFF;
+        -webkit-box-shadow: 1px 1px 3px #333;
+        -moz-box-shadow: 1px 1px 3px #333;
+        box-shadow: 1px 1px 3px #333; 
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1); 
+    }
+
+    &.contact__social--facebook{
+        background-color:#3C599F;
+    }
+    &.contact__social--linkedin{
+        background-color:#0085AE;
+    }
+
+    &.contact__social--messenger{
+        background-color:#229ACC;
+    }
+
+    &.contact__social--email{
+        background-color:#A1755C;
+    }
+
 }
+ 

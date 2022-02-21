@@ -18,7 +18,7 @@ function Footer() {
             <p className='footer__paragraph'>{data.footer.description}</p>
 
             <a className='footer__copyright' href="https://github.com/etoscano">
-            Copyright © {(new Date().getFullYear())}, etoscano. All rights reserved.
+            Copyright © {(new Date().getFullYear())}, Beatrice Toscano's Team. All rights reserved.
             </a>
 
         </div>

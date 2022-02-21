@@ -5,6 +5,24 @@ function Parser(props){
     return parse(props.toParse);
 }
 
+
+function Testimonials({ source }) {
+    return (
+      <>
+        {source ? (
+          <ul className="testimonial__list">
+            {[...source].reverse().map((listitem) => (
+              <li className="testimonial__item" key={listitem.index}>
+                  <p>{listitem.description} </p>
+                  <p className="testimonial__person" >- {listitem.person} </p>
+              </li>
+            ))}
+          </ul>
+        ) : null}
+      </>
+    );
+  }
+
 function Home() {
   return  <div className="home">
             <section className="home__wrapper">
@@ -31,6 +49,8 @@ function Home() {
 
                     <hr className="home__line"></hr>
 
+                    <h2 className="home__sectionTitle">{data.home.sectionTitle}</h2>
+
                     <p  className="home__description">
                         <Parser toParse={data.home.secondDescription} />
                     </p>
@@ -40,6 +60,16 @@ function Home() {
                     <p  className="home__description">
                         <Parser toParse={data.home.thirdDescription} />
                     </p>
+
+                    <hr className="home__line"></hr>
+
+                    <h2 className="home__sectionTitle">{data.testimonials.title}</h2>
+
+                    <p  className="home__description">
+                        <Parser toParse={data.testimonials.description} />
+                    </p>
+
+                    <Testimonials source={data.testimonials.list} />
 
                 </div>
 

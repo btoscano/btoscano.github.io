@@ -37,6 +37,14 @@ section:nth-child(even)
     flex: 65%;
 }
 
+.home__sectionTitle{
+    margin-top: 64px;
+    @extend %h2;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+
 .home__title{
     margin-top: 64px;
     @extend %h1;
@@ -110,4 +118,43 @@ section:nth-child(even)
     width: 100%;
     &:hover{
     }
+}
+
+.testimonial__list{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: relative;
+    text-align: center;
+}
+
+.testimonial__item{
+    max-width: 40%;
+    background-color: $color-light-2;
+    padding: 32px;
+    padding-top: 48px;
+    margin-top: 48px;
+    position: relative;
+    border-bottom: 2px solid $color-brown-grey;
+
+    &::after{
+        content: '“';
+        font-size: 64px;
+        line-height: 100px;
+        text-align: center;
+        color: $color-light-2;
+        position: absolute;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        top: -35px;
+        background-color: $color-brown-grey;
+        left: 50%;
+        margin-left: -35px;
+      
+    }
+}
+.testimonial__person{
+    margin-top: 16px;
+    font-style: italic;
 }
