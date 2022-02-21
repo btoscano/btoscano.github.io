@@ -24,6 +24,11 @@ section:nth-child(even)
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: row;
+
+    @include bpmax($m) {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 
 
@@ -74,6 +79,11 @@ section:nth-child(even)
         
     }
 
+    @include bpmax($m) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 }
 
 .home__quote{
@@ -83,6 +93,10 @@ section:nth-child(even)
     padding: 0 64px;
     text-align: center;
     line-height: rem(64px);
+
+    @include bpmax($m) {
+        padding: 0;
+    }
 }
 .home__line{
     background: linear-gradient(to right, $color-white, $color-light-2, $color-link, $color-light-2, $color-white);
@@ -97,10 +111,21 @@ section:nth-child(even)
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 32px;
+
+    @include bpmax($m) {
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
 }
 
 .home__imgItem{
     max-width: 30%;
+
+    @include bpmax($xs) {
+        max-width: 70%;
+        margin-bottom: 16px;
+    }
 }
 
 .home__leftWrapper{
@@ -112,6 +137,10 @@ section:nth-child(even)
 .home__img{
     padding-top: 80px;
     max-width: 60%;
+
+    @include bpmax($m) {
+        padding-top: 32px;
+    }
 }
 
 .home__img2{
@@ -136,6 +165,10 @@ section:nth-child(even)
     margin-top: 48px;
     position: relative;
     border-bottom: 2px solid $color-brown-grey;
+
+    @include bpmax($m) {
+        max-width: 90%;
+    }
 
     &::after{
         content: '“';

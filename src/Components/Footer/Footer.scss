@@ -17,6 +17,10 @@
     outline: 4px solid $color-light-2;
     outline-offset: -32px;
     outline-style: double;
+
+    @include bpmax($m) {
+        flex-direction: column;
+    }
 }
 
 .footer__leftWrapper{

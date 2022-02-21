@@ -41,7 +41,7 @@ function Header() {
                   <Link className={`header__link ${about ? "header__link--active" : ""} `} to="/esperienza" onClick={() => setSelected('about')}> Esperienza </Link>
                 </li>
                 <li className={`header__item header__item--title `}>
-                  <Link className={`header__link header__title ${home ? "header__link--active" : ""} `}  to="/" onClick={() => setSelected('home')} > - Beatrice Toscano - </Link>
+                  <Link className={`header__link header__title ${home ? "header__link--active" : ""} `}  to="/" onClick={() => setSelected('home')} >Beatrice Toscano</Link>
                 </li>       
                 <li className={`header__item `}>
                   <Link className={`header__link ${contact ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('contact')}> Scrivimi </Link>

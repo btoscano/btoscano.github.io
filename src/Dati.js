@@ -88,7 +88,7 @@ const data = {
       joblink: "https://www.google.it",
       employer: "Cives Universi - Centro Internazionale di Cultura",
       date: "27 novembre 2018",
-      description: "Intervento alla conferenza “F.Scott Fitzgerald - La presenza in Europa dello scrittore statunitense” organizzata da Cives Universi - Centro Internazio- nale di Cultura con un intervento dal titolo “Il soggiorno europeo e le radici della crisi personale e coniugale dei Fitzgerald”"
+      description: "Intervento alla conferenza “F.Scott Fitzgerald - La presenza in Europa dello scrittore statunitense” organizzata da Cives Universi - Centro Internazionale di Cultura con un intervento dal titolo “Il soggiorno europeo e le radici della crisi personale e coniugale dei Fitzgerald”"
     }  
   ],
   education: [

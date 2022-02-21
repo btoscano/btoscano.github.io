@@ -12,7 +12,7 @@ function App() {
 
       <Header/>
 
-      <canvas className="webgl"></canvas>
+      {/* <canvas className="webgl"></canvas> */}
       {/* Some content that stays in all pages */}
 
     </div>

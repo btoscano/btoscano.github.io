@@ -47,7 +47,7 @@ function About() {
 
           <div className="about__leftWrapper">
 
-          <img className="home__img" src={data.about.img}></img>
+          <img className="about__img" src={data.about.img}></img>
 
           <ul className="about__list">
             <li className={`about__item `}>

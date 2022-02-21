@@ -76,7 +76,7 @@ function Contact() {
 
         <div className="contact__leftWrapper">
 
-        <img className="home__img" src={data.contact.img}></img>
+        <img className="contact__img" src={data.contact.img}></img>
         <nav>
           <ul className="contact__list">
             <li className={`contact__item `}>
