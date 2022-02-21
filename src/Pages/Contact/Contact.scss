@@ -179,3 +179,14 @@
     margin-top: 8px;
     color: rgb(155, 0, 0);
 }
+
+.contact__success{
+    background-color: $color-brown-grey;
+    color: $color-white;
+    position: fixed;
+    padding: 4px;
+    width: 320px;
+    box-sizing: border-box;
+    bottom: 1em;
+    right: 1em;
+}

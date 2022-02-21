@@ -10,7 +10,22 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import data from "../../Dati";
 
 import { useForm } from 'react-hook-form';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+import emailjs from 'emailjs-com';
 
+const toastifySuccess = () => {
+  toast('Messaggio inviato!', {
+    position: 'bottom-right',
+    autoClose: 5000,
+    hideProgressBar: true,
+    closeOnClick: true,
+    pauseOnHover: true,  
+    draggable: false,
+    className: 'contact__success',
+    toastId: 'notifyToast'
+  });
+};
 
 function Contact() {
   const {
@@ -20,15 +35,39 @@ function Contact() {
     formState: { errors }
   } = useForm();
   
+  // const onSubmit = async (data) => {
+  //   const { firstname, surname, email, subject, message } = data;
+    
+  //   console.log('Name: ', firstname);
+  //   console.log('Surname: ', surname);
+  //   console.log('Email: ', email);
+  //   console.log('Subject: ', subject);
+  //   console.log('Message: ', message);
+  // };
+
   const onSubmit = async (data) => {
     const { firstname, surname, email, subject, message } = data;
-    
-    console.log('Name: ', firstname);
-    console.log('Surname: ', surname);
-    console.log('Email: ', email);
-    console.log('Subject: ', subject);
-    console.log('Message: ', message);
+    try {
+      const templateParams = {
+        firstname,
+        surname,
+        email,
+        subject,
+        message
+      };
+      await emailjs.send(
+        "service_g4dvut8",
+        "template_3wt4u0c",
+        templateParams,
+        "user_tDcGr4CBcRLjFJud7yicI"
+      );
+      reset();
+      toastifySuccess();
+    } catch (e) {
+      console.log(e);
+    }
   };
+
 
 
   return <div className="contact">
@@ -140,6 +179,7 @@ function Contact() {
 
         </form>
 
+        <ToastContainer />
 
         </div>
 
