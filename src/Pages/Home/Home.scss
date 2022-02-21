@@ -53,9 +53,24 @@ section:nth-child(even)
     padding: 0 64px;
     text-align: justify;
     text-justify: inter-word;
+
+    b, strong{
+        font-weight: 600;
+    }
+    u{
+        text-decoration:underline;
+    }
+    a{
+        color: $color-link;
+        text-decoration:underline;
+        
+    }
+
 }
+
 .home__quote{
     @extend %jumbo;
+    margin-top: 64px;
     margin-bottom: 64px;
     padding: 0 64px;
     text-align: center;
@@ -73,6 +88,7 @@ section:nth-child(even)
     margin: 0 64px;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 32px;
 }
 
 .home__imgItem{

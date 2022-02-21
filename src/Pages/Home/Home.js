@@ -1,4 +1,9 @@
 import data from "../../Dati";
+import parse from 'html-react-parser';
+
+function Parser(props){
+    return parse(props.toParse);
+}
 
 function Home() {
   return  <div className="home">
@@ -12,15 +17,9 @@ function Home() {
                     <h1 className="home__title">Beatrice Toscano</h1>
                     <p className="home__subtitle">{data.home.subtitle}</p>
 
-                    <p  className="home__description">{data.home.description}</p>
-
-                    <p  className="home__quote"> “{data.home.quote}” </p>
-
-                    <p  className="home__description">{data.home.secondDescription}</p>
-
-                    <hr className="home__line"></hr>
-
-                    <p  className="home__description">{data.home.thirdDescription}</p>
+                    <p  className="home__description">
+                        <Parser toParse={data.home.description} />
+                    </p>
 
                     <div className="home__images" >
                         <img className="home__imgItem" src={data.home.img1}></img>
@@ -29,6 +28,18 @@ function Home() {
                         <img className="home__imgItem" src={data.home.img3}></img>
                         <img className="home__imgItem" src={data.home.img4}></img>
                     </div>  
+
+                    <hr className="home__line"></hr>
+
+                    <p  className="home__description">
+                        <Parser toParse={data.home.secondDescription} />
+                    </p>
+
+                    <p  className="home__quote"> “{data.home.quote}” </p>
+
+                    <p  className="home__description">
+                        <Parser toParse={data.home.thirdDescription} />
+                    </p>
 
                 </div>
 

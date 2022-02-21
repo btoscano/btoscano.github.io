@@ -173,7 +173,7 @@
     text-decoration: none;
     color: darken($color-white,0);
     background-color: lighten($color-brown-grey,20);
-
+    cursor: pointer;
 
     &:after,
     &:before {
