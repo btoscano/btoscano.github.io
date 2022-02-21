@@ -58,6 +58,10 @@
     &--active{
         outline-color: $color-brown-grey;
     }
+
+    &:hover{
+        outline-color: $color-link;
+    }
 }
 
 .header__title{

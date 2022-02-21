@@ -76,45 +76,36 @@ function Contact() {
 
         <div className="contact__leftWrapper">
 
+        <img className="home__img" src={data.contact.img}></img>
+        <nav>
+          <ul className="contact__list">
+            <li className={`contact__item `}>
+            <a className="contact__link"  href="https://www.linkedin.com/in/beatrice-toscano/"> 
+            <FontAwesomeIcon className="contact__social contact__social--linkedin" icon={faLinkedinIn} />
+            LinkedIn </a> 
+            </li>                
+            <li className={`contact__item`}>
+            <a className="contact__link" href="#TODO"> 
+            <FontAwesomeIcon className="contact__social contact__social--messenger" icon={faFacebookMessenger} />
+            Messenger </a> 
+            </li> 
+            <li className={`contact__item`}>
+            <a className="contact__link" href="mailto:btoscano95@gmail.com">
+            <FontAwesomeIcon className="contact__social contact__social--email" icon={faEnvelope} />
+            Email  </a> 
+            </li>                
+          </ul> 
+      </nav>
+
         </div>
 
         <div className="contact__rightWrapper">
             <h1 className="contact__title">Scrivimi</h1>
             <p className="contact__paragraph">{data.contact.description} </p>
 
-            {/* <div className='contact__linkWrapper' >
-              <a className='contact__link' href="mailto:btoscano95@gmail.com">
-                <FontAwesomeIcon className="contact__social" icon={faEnvelope} /> {data.contact.mail}
-              </a>
-            </div> */}
-
-            <nav>
-            <ul className="contact__socialList"> 
-            <li>
-                <a className='contact__link' href="https://www.linkedin.com/in/beatrice-toscano/">
-                <FontAwesomeIcon className="contact__social contact__social--linkedin" icon={faLinkedinIn} />
-                LinkedIn
-                </a>
-              </li>           
-              <li>
-                {/* TODO link */}
-                <a className='contact__link' href="#">
-                <FontAwesomeIcon className="contact__social contact__social--messenger" icon={faFacebookMessenger} />
-                Messenger
-                </a>
-              </li> 
-              <li>
-                <a className='contact__link' href="mailto:btoscano95@gmail.com">
-                <FontAwesomeIcon className="contact__social contact__social--email" icon={faEnvelope} />
-                Email
-                </a>
-              </li> 
-          </ul>
-        </nav>
-
 
         <form className="contact__form" aria-labelledby="formTitle"  onSubmit={handleSubmit(onSubmit)} >
-          <h2 className='contact__formTitle' id='formTitle'>Fill form</h2>
+          <h2 className='contact__formTitle' id='formTitle'>{data.contact.formTitle}</h2>
 
           <div className='contact__group'>
             <label className='contact__label' htmlFor="firstname">Nome</label>

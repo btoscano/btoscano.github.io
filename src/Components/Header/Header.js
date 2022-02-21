@@ -36,22 +36,22 @@ function Header() {
           <div className="header__before"></div>
           <nav className="header__nav">
             <div className="header__innerBefore"></div>
-            <ul className="header__list">
+            <ul className="header__list">              
                 <li className={`header__item `}>
-                  <Link className={`header__link ${contact ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('contact')}> Scrivimi </Link>
-                </li>                
-                <li className={`header__item `}>
-                  <Link className={`header__link ${about ? "header__link--active" : ""} `} to="/chi-sono" onClick={() => setSelected('about')}> Chi sono </Link>
+                  <Link className={`header__link ${about ? "header__link--active" : ""} `} to="/esperienza" onClick={() => setSelected('about')}> Esperienza </Link>
                 </li>
                 <li className={`header__item header__item--title `}>
                   <Link className={`header__link header__title ${home ? "header__link--active" : ""} `}  to="/" onClick={() => setSelected('home')} > - Beatrice Toscano - </Link>
-                </li>                
+                </li>       
                 <li className={`header__item `}>
+                  <Link className={`header__link ${contact ? "header__link--active" : ""} `} to="/scrivimi" onClick={() => setSelected('contact')}> Scrivimi </Link>
+                </li>           
+                {/* <li className={`header__item `}>
                   <Link className={`header__link ${redazione ? "header__link--active" : ""} `} to="/redazione" onClick={() => setSelected('redazione')}> Redazione </Link>
                 </li>    
                 <li className={`header__item `}>
                   <Link className={`header__link ${projects ? "header__link--active" : ""} `} to="/progetti" onClick={() => setSelected('projects')}> Progetti </Link>
-                </li>              
+                </li>               */}
             </ul>        
             <div className="header__innerAfter"></div>     
           </nav>
@@ -63,7 +63,7 @@ function Header() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/scrivimi" element={<Contact />} />
-        <Route path="/chi-sono" element={<About />} />
+        <Route path="/esperienza" element={<About />} />
         <Route path="/progetti" element={<Projects />} />
         <Route path="/redazione" element={<Redazione />} />
         <Route path="*" element={<ErrorPage />} />

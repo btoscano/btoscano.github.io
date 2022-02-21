@@ -19,7 +19,9 @@ const data = {
   },
   contact: {
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
-    mail: "btoscano95@gmail.com"
+    mail: "btoscano95@gmail.com",
+    formTitle:"Fill form",
+    img: "BeatriceToscano.png"
   },  
   testimonials: {
     title: "Testimonials",

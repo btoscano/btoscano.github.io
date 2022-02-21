@@ -23,7 +23,7 @@
 
 .about__title{
     @extend %h1;
-    margin-top: 64px;
+    margin-top: 32px;
     margin-bottom: 32px;
     @extend %tracking-in-expand;
 }
@@ -212,7 +212,7 @@
 }
 
 .about__list{
-    margin-top: 32px;
+    margin-top: 64px;
     display: flex;
     flex-direction: column;
 }

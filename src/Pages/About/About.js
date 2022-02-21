@@ -51,7 +51,7 @@ function About() {
 
           <ul className="about__list">
             <li className={`about__item `}>
-            <button className="about__button" onClick={experienceScroll}> Esperienza </button> 
+            <button className="about__button" onClick={experienceScroll}> Lavoro </button> 
             </li>                
             <li className={`about__item`}>
             <button className="about__button" onClick={educationScroll}> Formazione </button> 
@@ -64,7 +64,7 @@ function About() {
         </div>
 
         <div className="about__rightWrapper">
-          <h1 className="about__title">Chi sono</h1>
+          <h1 className="about__title">Esperienza</h1>
           <p className="about__paragraph">{data.about.paragrafo}</p>
 
           <div className="about__images" >

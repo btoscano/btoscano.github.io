@@ -10,7 +10,7 @@
 .contact__wrapper{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: row;
 }
 
@@ -22,7 +22,7 @@
 
 .contact__title{
     @extend %h1;
-    margin-top: 64px;
+    margin-top: 32px;
     margin-bottom: 32px;
     @extend %tracking-in-expand;
 }
@@ -37,25 +37,20 @@
 
 .contact__leftWrapper{
     display: flex;
-    justify-content: center;
-    flex: 35%;
+    justify-content: flex-start;
+    flex: 35% 1;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact__linkWrapper{
     padding: 0 64px;
 }
 
-// .contact__link{
-//     border-radius: 50;
-//     padding: 16px;
-//     // background-color: yellow;
-//     background-color: $color-light-2;
-// }
-
-// .contact__social{
-//     margin-right: 16px;
-// }
-
+.contact__social{
+    font-size: rem(16px);
+    margin-right: 8px;
+}
 
 
 .contact__socialList{
@@ -63,71 +58,101 @@
     justify-content: center;
 }
 
-.contact__link{
-    display: block;
-    height: 80px;
+.contact__list{
+    margin-top: 64px;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    align-items: center;
-    width: 150px;
-    @extend %occhiello--small;
 }
 
-.contact__social{
-    width: 24px;
-    height: 24px;
-    padding: 12px;
-    line-height: 50px;
-    text-align: center;
-    color: #FFF;
-    color: rgba(255, 255, 255, 0.8);
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    border-radius: 50%;
+.contact__item{
+    margin-bottom: 16px;
+    position: relative;
+	display: inline-block;
+	white-space: nowrap;
+	text-align: center;
+    z-index: 10;
 
-
-    &:hover, &:active {
-        color: #FFF;
-        -webkit-box-shadow: 1px 1px 3px #333;
-        -moz-box-shadow: 1px 1px 3px #333;
-        box-shadow: 1px 1px 3px #333; 
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        transform: scale(1.1); 
+    &:hover{
+        opacity: 0.5;
     }
 
-    &.contact__social--facebook{
-        background-color:#3C599F;
-    }
-    &.contact__social--linkedin{
-        background-color:#0085AE;
+	&:after,
+	&:before {
+		content: " ";
+		display: block;
+		position: absolute;
+		bottom: -.5em;
+		width: 1em;
+		height: 100%;
+		background-color: lighten($color-brown-grey,10);
+		pointer-events:none;
+	}
+
+	&:after {
+		right: -.57em;
+		z-index: -1;
+	}
+
+	&:before {
+		bottom: auto;
+		top: -.5em;
+		left: -.57em;
+		z-index: -1;
+	}
+
+}
+
+.contact__link{
+    width: 200px;
+    font-size: rem(20px);
+    line-height: rem(28px);
+    display: inline-block;
+    position: relative;
+    padding: .15em .75em;
+    text-decoration: none;
+    color: darken($color-white,0);
+    background-color: lighten($color-brown-grey,20);
+    cursor: pointer;
+
+    &:after,
+    &:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        bottom: -.5em;
+        left: -.05em;
+        pointer-events: none;
+        -webkit-mask: none;
     }
 
-    &.contact__social--messenger{
-        background-color:#229ACC;
+    &:before {
+        bottom: auto;
+        top: -.5em;
+        border-bottom: .5em solid darken($color-brown-grey,10);
+        border-left: .5em solid transparent;
     }
 
-    &.contact__social--email{
-        background-color:#A1755C;
+    &:after {
+        left:  auto;
+        right: -.05em;
+        border-top: .5em solid darken($color-brown-grey,10);
+        border-right: .5em solid transparent;
     }
-
 }
  
 
 .contact__form{
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(68,65,59,0.1); 
+    box-shadow: 0px 0px 10px 5px rgba(68,65,59,0.1);
     background-color: $color-light-2;
     border-bottom: 2px solid $color-brown-grey;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 64px;
-    padding: 64px 0;
+    padding: 32px  0;
 }
 
 .contact__formTitle{
