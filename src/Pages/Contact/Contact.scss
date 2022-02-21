@@ -149,6 +149,9 @@
     margin-right: 32px;
     padding: 8px;
 
+    &::after{
+        content: " *";
+    }
 }
 
 .contact__input{
@@ -170,4 +173,9 @@
         opacity: 0.8;
         cursor: pointer;
     }
+}
+
+.contact__errorMessage{
+    margin-top: 8px;
+    color: rgb(155, 0, 0);
 }

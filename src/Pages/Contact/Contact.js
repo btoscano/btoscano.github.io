@@ -9,7 +9,28 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 
 import data from "../../Dati";
 
+import { useForm } from 'react-hook-form';
+
+
 function Contact() {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors }
+  } = useForm();
+  
+  const onSubmit = async (data) => {
+    const { firstname, surname, email, subject, message } = data;
+    
+    console.log('Name: ', firstname);
+    console.log('Surname: ', surname);
+    console.log('Email: ', email);
+    console.log('Subject: ', subject);
+    console.log('Message: ', message);
+  };
+
+
   return <div className="contact">
     
     <section className="contact__wrapper">
@@ -53,29 +74,69 @@ function Contact() {
         </nav>
 
 
-        <form className="contact__form" aria-labelledby="formTitle">
+        <form className="contact__form" aria-labelledby="formTitle"  onSubmit={handleSubmit(onSubmit)} >
           <h2 className='contact__formTitle' id='formTitle'>Fill form</h2>
+
           <div className='contact__group'>
-            <label className='contact__label' htmlFor="firstname">Nome:</label>
-            <input className='contact__input' placeholder="Nome" type="text" name="firstname" id="firstname"></input>
+            <label className='contact__label' htmlFor="firstname">Nome</label>
+            <input className='contact__input' placeholder="Nome" type="text" name="firstname" id="firstname" 
+            {...register('firstname', {
+              required: { value: true, message: 'Please enter your name' }
+            })}></input>
+            {errors.firstname && (
+              <span className='contact__errorMessage'>{errors.firstname.message}</span>
+            )}              
           </div>
 
           <div className='contact__group'>
-            <label className='contact__label' htmlFor="surname">Cognome:</label>
-            <input className='contact__input' placeholder="Cognome" type="text" name="surname" id="surname"></input>            
+            <label className='contact__label' htmlFor="surname">Cognome</label>
+            <input className='contact__input' placeholder="Cognome" type="text" name="surname" id="surname"
+            {...register('surname', {
+              required: { value: true, message: 'Please enter your surname' }
+            })}></input>    
+            {errors.surname && (
+              <span className='contact__errorMessage'>{errors.surname.message}</span>
+            )}                     
+          </div>          
+          
+          <div className='contact__group'>
+            <label className='contact__label' htmlFor="email">Email</label>
+            <input className='contact__input' placeholder="Cognome" type="email" name="email" id="email"
+            {...register('email', {
+              required: { value: true, message: 'Please enter your email' }
+            })}></input>    
+            {errors.email && (
+              <span className='contact__errorMessage'>{errors.email.message}</span>
+            )}                   
           </div>
 
           <div className='contact__group'>
-            <label className='contact__label' >Oggetto:</label>
-            <input className='contact__input' placeholder="Oggetto" type="text" name="subject" id="subject"></input>            
+            <label className='contact__label' >Oggetto</label>
+            <input className='contact__input' placeholder="Oggetto" type="text" name="subject" id="subject"
+            {...register('subject', {
+              required: { value: true, message: 'Please enter a subject' },
+              maxLength: {
+                value: 75,
+                message: 'Subject cannot exceed 75 characters'
+              }
+            })} ></input>    
+            {errors.subject && (
+              <span className='contact__errorMessage'>{errors.subject.message}</span>
+            )} 
           </div>
 
           <div className='contact__group'>
-            <label className='contact__label' >Messaggio:</label>
-            <textarea className='contact__input' rows="8" placeholder="Messaggio" type="textarea" name="message" id="message"></textarea>            
+            <label className='contact__label' >Messaggio</label>
+            <textarea className='contact__input' rows="8" placeholder="Messaggio" type="textarea" name="message" id="message"
+            {...register('message', {
+              required: { value: true, message: 'Please enter a message' },
+            })} ></textarea>   
+            {errors.message && (
+              <span className='contact__errorMessage'>{errors.message.message}</span>
+            )}           
           </div>
 
-          <button className='contact__button'>Invia</button>  
+          <button className='contact__button' type='submit'>Invia</button>  
 
         </form>
 
