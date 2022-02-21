@@ -9,13 +9,13 @@ import ErrorPage from "../../Pages/ErrorPage";
 import { useState, useEffect } from 'react';
 
 function Header() {
-    const names = ['home', 'contact', 'projects', 'chi-sono', 'redazione'];
+    const names = ['home', 'contact', 'projects', 'about', 'redazione'];
     const [active, setActive] = useState(names[0]);
     const [flag, setFlag] = useState(true);
     const contact = active === 'contact';
     const home = active === 'home';
     const projects = active === 'projects';
-    const about = active === 'chi-sono';
+    const about = active === 'about';
     const redazione = active === 'redazione';
 
     if (flag){
