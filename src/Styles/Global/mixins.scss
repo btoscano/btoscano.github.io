@@ -19,6 +19,12 @@
   }
 }
 
+@mixin bpmax($width) {
+  @media screen and (max-width: calc($width - 1px)) {
+    @content;
+  }
+}
+
 
 // breakpoints
 $xxs: 375px;
