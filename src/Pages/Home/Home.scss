@@ -76,12 +76,24 @@ section:nth-child(even)
     a{
         color: $color-link;
         text-decoration:underline;
-        
+    }
+    i{
+        font-style: italic;
     }
 
     @include bpmax($m) {
         padding-left: 0;
         padding-right: 0;
+    }
+
+    li{
+        line-height: rem(24px);
+    
+        &::before{
+            content: '◈';
+            font-size: rem(12px);
+            margin-right: 8px;
+        }
     }
 
 }
@@ -90,9 +102,9 @@ section:nth-child(even)
     @extend %jumbo;
     margin-top: 64px;
     margin-bottom: 64px;
-    padding: 0 64px;
+    padding: 0 120px;
     text-align: center;
-    line-height: rem(64px);
+    line-height: rem(80px);
 
     @include bpmax($m) {
         padding: 0;

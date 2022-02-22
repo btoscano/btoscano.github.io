@@ -55,12 +55,14 @@ function Home() {
                         <Parser toParse={data.home.secondDescription} />
                     </p>
 
-                    <p  className="home__quote"> “{data.home.quote}” </p>
-
                     <p  className="home__description">
                         <Parser toParse={data.home.thirdDescription} />
                     </p>
 
+                    <hr className="home__line"></hr>
+
+                    <p  className="home__quote"> “{data.home.quote}” </p>
+                    
                     <hr className="home__line"></hr>
 
                     <h2 className="home__sectionTitle">{data.testimonials.title}</h2>

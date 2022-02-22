@@ -1,15 +1,34 @@
 const data = {
   footer: {
-    subtitle: "Redattrice e correttrice bozze",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
+    subtitle: "Redattrice, traduttrice e correttrice bozze",
+    description: "Redattrice e traduttrice meneghina, Beatrice Toscano attualmente lavora al nuovo progetto della casa editrice Feltrinelli – IBS.it per la promozione di un social network dedicato alle novità editoriali. Grazie alla sua forte motivazione e la sua etica lavorativa, si è distinta conseguendo ottimi risultati in ambito universitario e scolastico.",
   }, 
   home: {
-    subtitle: "Redattrice e correttrice bozze",
-    description: "Lorem <a  href='www.google.it'> link</a> <b> dolor sit amet </b>, <strong> consectetur  </strong> adipiscing  <u>elit</u>. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
-    sectionTitle: "Sezione 2",
-    secondDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
-    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    thirdDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. ",
+    subtitle: "Redattrice, traduttrice e correttrice bozze",
+    description: "Laureata magistrale in <i>Editoria, Comunicazione e Moda</i> con <b>Master di II livello</b>, solide competenze di <b>redazione</b> e <b>traduzione</b>. Seguo con interesse il mondo <b>social</b>, in particolare Instagram, Tik Tok e Youtube.",
+    sectionTitle: "Competenze",
+    // secondDescription: "Lorem <a  href='www.google.it'> link</a> <b> dolor sit amet </b>, <strong> consectetur  </strong> adipiscing  <u>elit</u>. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
+    secondDescription: `
+    Lorem <a  href='www.google.it'> link</a> <b> dolor sit amet </b>, <strong> consectetur  </strong> adipiscing  <u>elit</u>. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.
+    `,
+    quote: "Scrivi senza paura. Edita senza pietà.",
+    thirdDescription: 
+    `
+    <ul>
+    <li>Ottima capacità di <b>SEO writing</b> </li>
+    <li>Dimestichezza nell’utilizzo di <b>CMS</b> come <b>Wordpress</b></li>
+    <li>Buona padronanza di <b>Adobe Photoshop</b> e <b>Premiere Pro</b></li>
+    <li>Conoscenza base di <b>InDesign</b>, <b>Illustrator</b>, <b>HTML/CSS</b></li>
+    <li>Padronanza del pacchetto <b>Microsoft Office</b></li> 
+    </ul>
+    <br>
+    <b>Italiano</b>: Madrelingua
+    <br>
+    <b>Inglese</b> scritto e parlato: Ottimo
+    <br>
+    <b>Spagnolo</b> scritto e parlato: Discreto
+    `
+    ,
     img: "BeatriceToscano.png",
     img1: "lafeltrinelli.png",
     img2: "illeoneverde.png",
@@ -20,11 +39,11 @@ const data = {
   contact: {
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
     mail: "btoscano95@gmail.com",
-    formTitle:"Fill form",
+    formTitle:"Contattami",
     img: "BeatriceToscano.png"
   },  
   testimonials: {
-    title: "Testimonials",
+    title: "Dicono di me",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. ",
     list: [
       {
@@ -69,7 +88,7 @@ const data = {
   },
   about: {
       paragrafo: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a.",
-      img: "BeatriceToscano.png",
+      img: "BeatriceToscano2.png",
       img1: "img_6.jpeg",
       img2: "img_2.jpeg",
       img3: "img_3.jpeg"

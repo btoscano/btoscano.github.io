@@ -97,13 +97,13 @@
 
 %jumbo,
 .jumbo {
-  font-size: rem(24px);  
+  font-size: rem(32px);  
   line-height: 1.5;
   font-family: $serif;
   font-weight: 500;
   margin: 0;
   @include bp($m){
-    font-size: rem(48px);
+    font-size: rem(64px);
     line-height: 0.82;
   }
 }
