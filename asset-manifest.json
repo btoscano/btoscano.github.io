@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/btoscano/static/css/main.269784c2.css",
+    "main.js": "/btoscano/static/js/main.93405bcf.js",
+    "index.html": "/btoscano/index.html",
+    "main.269784c2.css.map": "/btoscano/static/css/main.269784c2.css.map",
+    "main.93405bcf.js.map": "/btoscano/static/js/main.93405bcf.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.269784c2.css",
+    "static/js/main.93405bcf.js"
+  ]
+}
