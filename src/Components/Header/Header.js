@@ -1,14 +1,21 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "../../Pages/Home/Home";
-import Contact from "../../Pages/Contact/Contact";
-import About from "../../Pages/About/About";
+// import Home from "../../Pages/Home/Home";
+// import Contact from "../../Pages/Contact/Contact";
+// import About from "../../Pages/About/About";
 import Projects from "../../Pages/Projects/Projects";
 import Redazione from "../../Pages/Redazione";
 import ErrorPage from "../../Pages/ErrorPage";
 
-import { useState } from 'react';
+import Loader from "../Loader/Loader";
+
+import React, { Suspense, useState } from "react";
 
 function Header() {
+
+    const Home = React.lazy(() => import("../../Pages/Home/Home"));
+    const Contact = React.lazy(() => import("../../Pages/Contact/Contact"));
+    const About = React.lazy(() => import("../../Pages/About/About"));
+
     const names = ['home', 'contact', 'projects', 'about', 'redazione'];
     const [active, setActive] = useState(names[0]);
     const [flag, setFlag] = useState(true);
@@ -29,6 +36,8 @@ function Header() {
 
 
   return (
+  <Suspense maxDuration={300} fallback={<Loader />}>
+
     <Router>
       <header className="header" id="header">
         {/* Links */}
@@ -69,6 +78,8 @@ function Header() {
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
+
+    </Suspense>
   );
 }
 
