@@ -74,9 +74,9 @@ function Home() {
                         <Parser toParse={data.home.secondDescription} />
                     </p>
 
-                    <p  className="home__description">
+                    <div  className="home__description">
                         <Parser toParse={data.home.thirdDescription} />
-                    </p>
+                    </div>
 
                     <hr className="home__line"></hr>
 

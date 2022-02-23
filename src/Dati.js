@@ -21,12 +21,13 @@ const data = {
     <li>Conoscenza base di <b>InDesign</b>, <b>Illustrator</b>, <b>HTML/CSS</b></li>
     <li>Padronanza del pacchetto <b>Microsoft Office</b></li> 
     </ul>
-    <br>
+    <p>
     <b>Italiano</b>: Madrelingua
     <br>
     <b>Inglese</b> scritto e parlato: Ottimo
     <br>
     <b>Spagnolo</b> scritto e parlato: Discreto
+    </p>
     `
     ,
     img: "BeatriceToscano.png",
