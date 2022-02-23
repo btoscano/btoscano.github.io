@@ -20,12 +20,19 @@
 
     @include bpmax($m) {
         flex-direction: column;
+        padding: 24px;
+        outline-offset: -16px;
+        align-items: center;
     }
 }
 
 .footer__leftWrapper{
     padding: 32px;
     flex: 65%;
+
+    @include bpmax($m) {
+        padding: 16px;
+    }
 }
 
 
@@ -34,6 +41,10 @@
     display: flex;
     justify-content: flex-end;
     flex: 35%;
+
+    @include bpmax($m) {
+        padding: 16px;
+    }
 }
 
 
@@ -45,6 +56,10 @@
     text-justify: inter-word;
     margin-bottom: 32px;
     max-width: 80%;
+
+    @include bpmax($m) {
+        max-width: 100%;
+    }
 }
 
 .footer__copyright{
@@ -59,6 +74,10 @@
     display: block;
     margin-right: 16px;
     height: 48px;
+
+    @include bpmax($m) {
+        margin: 0px 8px;
+    }
 }
 
 .footer__social{
