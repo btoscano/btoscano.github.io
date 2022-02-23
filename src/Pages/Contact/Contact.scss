@@ -20,8 +20,8 @@
 }
 
 .contact__img{
-    padding-top: 80px;
-    max-width: 60%;
+    padding-top: 100px;
+    max-width: 50%;
 
     @include bpmax($m) {
         padding-top: 32px;
@@ -32,6 +32,10 @@
     // text-align: center;
     padding: 32px;
     flex: 65%;
+
+    @include bpmax($m) {
+        padding: 16px;
+    }
 }
 
 .contact__title{
@@ -50,7 +54,7 @@
 
 
     @include bpmax($m) {
-        padding: 0;
+        padding: 8px;
     }
 }
 
@@ -193,6 +197,14 @@
     padding: 0 64px;
     font-size: rem(18px);
     margin-bottom: 16px;
+
+    @include bpmax($xs) {
+        padding: 0 48px;
+    }
+
+    @include bpmax($xxs) {
+        padding: 0 24px;
+    }
 }
 
 .contact__label{
