@@ -9,7 +9,7 @@ const data = {
     sectionTitle: "Competenze",
     // secondDescription: "Lorem <a  href='www.google.it'> link</a> <b> dolor sit amet </b>, <strong> consectetur  </strong> adipiscing  <u>elit</u>. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
     secondDescription: `
-    Lorem <a  href='www.google.it'> link</a> <b> dolor sit amet </b>, <strong> consectetur  </strong> adipiscing  <u>elit</u>. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.
+    Lorem <a  href='https://www.google.it'> link</a> <b> dolor sit amet </b>, <strong> consectetur  </strong> adipiscing  <u>elit</u>. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.
     `,
     quote: "Scrivi senza paura. Edita senza pietà.",
     thirdDescription: 
@@ -31,11 +31,17 @@ const data = {
     ,
     img: "BeatriceToscano.png",
     img1: "lafeltrinelli.png",
+    link1: "https://maremosso.lafeltrinelli.it/",
     img2: "illeoneverde.png",
+    link2: "https://www.leoneverde.it/",
     img3: "wecontent.png",
+    link3: "https://www.wecontent.com/",
     img4: "dispari.png",
+    link4: "https://www.studiodispari.com/",
     img5: "cives.png",
-    img6: "iqm.png"
+    link5: "https://video.unimi.it/",
+    img6: "iqm.png",
+    link6: "https://www.iqmselezione.it/"
   },
   contact: {
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",

@@ -1,7 +1,6 @@
 import data from "../../Dati";
-import { Link } from "react-router-dom";
 
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 
 function Timeline({source}) {
   return [...source].reverse().map((entry) => (

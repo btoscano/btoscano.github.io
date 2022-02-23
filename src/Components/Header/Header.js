@@ -6,7 +6,7 @@ import Projects from "../../Pages/Projects/Projects";
 import Redazione from "../../Pages/Redazione";
 import ErrorPage from "../../Pages/ErrorPage";
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 function Header() {
     const names = ['home', 'contact', 'projects', 'about', 'redazione'];

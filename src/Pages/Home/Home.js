@@ -40,27 +40,27 @@ function Home() {
                     </p>
 
                     <div className="home__images" >
-                      <a className="home__imgItemWrapper"  href="#">
+                      <a className="home__imgItemWrapper"  href={data.home.link1}>
                       <img className="home__imgItem" src={data.home.img1}></img>
                       </a>       
                       
-                      <a className="home__imgItemWrapper"  href="#">
+                      <a className="home__imgItemWrapper"  href={data.home.link2}>
                       <img className="home__imgItem" src={data.home.img2}></img>
                       </a>   
 
-                      <a className="home__imgItemWrapper"  href="#">
+                      <a className="home__imgItemWrapper"  href={data.home.link3}>
                       <img className="home__imgItem" src={data.home.img3}></img>
                       </a>
 
-                      <a className="home__imgItemWrapper"  href="#">
+                      <a className="home__imgItemWrapper"  href={data.home.link4}>
                       <img className="home__imgItem" src={data.home.img4}></img>
                       </a>    
 
-                      <a className="home__imgItemWrapper"  href="#">
+                      <a className="home__imgItemWrapper"  href={data.home.link5}>
                       <img className="home__imgItem" src={data.home.img5}></img>
                       </a>     
 
-                      <a className="home__imgItemWrapper"  href="#">
+                      <a className="home__imgItemWrapper"  href={data.home.link6}>
                       <img className="home__imgItem" src={data.home.img6}></img>
                       </a>
  
