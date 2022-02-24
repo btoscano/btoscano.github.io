@@ -1,35 +1,8 @@
 import data from "../../Dati";
 
+import Timeline from "../../Components/Timeline/Timeline";
+
 import { useRef } from 'react';
-
-function Timeline({source}) {
-  return [...source].reverse().map((entry) => (
-    <div className="entry__wrapper" key={entry.index}>
-      <h2 className="entry__job">{entry.job}</h2>
-      <p className="entry__employer">
-        <a className="entry__link" href={entry.joblink}>
-          {" "}
-          {entry.employer}
-        </a>
-      </p>
-      <p className="entry__date">
-        <span>{entry.date}</span>
-      </p>
-      {entry.description ? <p className="entry__description">{entry.description}</p> : null}
-      {entry.grade ? <p className="entry__grade">{entry.grade}</p> : null}
-
-      {entry.list ? (
-        <ul className="entry__list">
-          {entry.list.map((listitem) => (
-            <li className="entry__item" key={listitem.index}>
-              {listitem.task}
-            </li>
-          ))}
-        </ul>
-      ) : null}
-    </div>
-  ));
-}
 
 function About() {
   const experience = useRef(null)
