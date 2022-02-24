@@ -20,7 +20,7 @@ function App() {
         <Suspense maxDuration={300} fallback={<Loader />}>
 
           <div className="app">
-            <Header GA={ReactGA}/>
+            <Header/>
           </div>
 
           <Footer/>

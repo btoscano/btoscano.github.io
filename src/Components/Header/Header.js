@@ -9,8 +9,11 @@ import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Loader from "../Loader/Loader";
 
 import React, { Suspense, useState } from "react";
+import ReactGA from "react-ga4";
 
-function Header(GA) {
+function Header() {
+    const TRACKING_ID = "G-HQD5ETJ34G"; 
+    ReactGA.initialize(TRACKING_ID);
 
     const Home = React.lazy(() => import("../../Pages/Home/Home"));
     const Contact = React.lazy(() => import("../../Pages/Contact/Contact"));
@@ -32,7 +35,7 @@ function Header(GA) {
 
     function setSelected(name) {
         setActive(name);
-        GA.send({ hitType: "pageview", page:"/" + name });
+        ReactGA.send({ hitType: "pageview", page:"/" + name });
     }
 
 
