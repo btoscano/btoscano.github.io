@@ -13,14 +13,14 @@ const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 function App() {
   const TRACKING_ID = "G-HQD5ETJ34G"; 
   ReactGA.initialize(TRACKING_ID);
-  ReactGA.send(window.location.pathname + window.location.search);
+  ReactGA.send({ hitType: "pageview", page:"/home" });
 
   return (
     <>
         <Suspense maxDuration={300} fallback={<Loader />}>
 
           <div className="app">
-            <Header/>
+            <Header GA={ReactGA}/>
           </div>
 
           <Footer/>
