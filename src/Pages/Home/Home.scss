@@ -167,10 +167,49 @@ section:nth-child(even)
 .home__leftWrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     flex: 35%;
+}
+.home__tagsWrapper{
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+    width: 60%;
+    border-radius: 29px;
+    outline: 4px solid $color-brown-grey;
+    outline-style: double;
+}
+
+.home__tags{
+    margin: 4px;
+    font-weight: 600;
+    font-family: $sansSerif;
+    letter-spacing: 1px;
+    display: inline-block;
+
+    &--color1{
+        color: $color-accent-1;
+    }    
+    &--color2{
+        color: $color-accent-2;
+    }    
+    &--color3{
+        color: $color-accent-3;
+    }    
+    &--color4{
+        color: $color-accent-4;
+    }    
+    &--color5{
+        color: $color-accent-5;
+    }    
+    &--color6{
+        color: $color-accent-6;
+    }
 }
 
 .home__img{
+    margin-bottom: 64px;
     padding-top: 100px;
     max-width: 50%;
 

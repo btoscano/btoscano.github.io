@@ -16,6 +16,15 @@ function Home() {
 
         <div className="home__leftWrapper">
             <img className="home__img" src={data.home.img} alt="Beatrice Toscano smiling" width="50%" height="50%"></img>
+
+            <div className="home__tagsWrapper">
+                <p className="home__tags home__tags--color1">#SEO</p>
+                <p className="home__tags  home__tags--color3">#MARKETING</p>
+                <p className="home__tags home__tags--color4">#SOCIALMEDIA</p>
+                <p className="home__tags home__tags--color2">#EDITOR</p>
+                <p className="home__tags home__tags--color5">#CMS</p>
+                <p className="home__tags home__tags--color6">#WORDPRESS</p>
+            </div>
         </div>
 
         <div className="home__rightWrapper">

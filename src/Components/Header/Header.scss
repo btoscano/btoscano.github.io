@@ -111,7 +111,7 @@
     position: absolute;
     display: block;
     border-style: solid;
-    border-color: $color-dark-1 transparent transparent transparent;
+    border-color: $color-brown-grey transparent transparent transparent;
     z-index: -1;
     
     @include bpmax($xxs) {
