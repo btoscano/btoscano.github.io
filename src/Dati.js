@@ -31,18 +31,39 @@ const data = {
     `
     ,
     img: "BeatriceToscano.png",
-    img1: "lafeltrinelli.png",
-    link1: "https://maremosso.lafeltrinelli.it/",
-    img2: "illeoneverde.png",
-    link2: "https://www.leoneverde.it/",
-    img3: "wecontent.png",
-    link3: "https://www.wecontent.com/",
-    img4: "dispari.png",
-    link4: "https://www.studiodispari.com/",
-    img5: "cives.png",
-    link5: "https://video.unimi.it/",
-    img6: "iqm.png",
-    link6: "https://www.iqmselezione.it/"
+    imgLinks: [
+      {
+        index: 0,
+        img: "lafeltrinelli.png",
+        link: "https://maremosso.lafeltrinelli.it/"
+      },
+      {
+        index: 1,
+        img: "illeoneverde.png",
+        link: "https://www.leoneverde.it/"
+      },
+      {
+        index: 2,
+        img: "wecontent.png",
+        link: "https://www.wecontent.com/"
+      },
+      {
+        index: 3,
+        img: "dispari.png",
+        link: "https://www.studiodispari.com/"
+      },
+      {
+        index: 4,
+        img: "cives.png",
+        link: "https://video.unimi.it/"
+      },
+      {
+        index: 5,
+        img: "iqm.png",
+        link: "https://www.iqmselezione.it/"
+      },
+    ]
+
   },
   contact: {
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",

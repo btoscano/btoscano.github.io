@@ -133,7 +133,7 @@ section:nth-child(even)
     }
 }
 
-.home__imgItemWrapper{
+.home__imgItemWrapper, .home__imgItemLink{
     display: contents;
 }
 
@@ -177,8 +177,6 @@ section:nth-child(even)
 
 .home__img2{
     width: 100%;
-    &:hover{
-    }
 }
 
 .testimonial__list{
