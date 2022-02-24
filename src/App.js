@@ -5,7 +5,7 @@ import Loader from "./Components/Loader/Loader";
 import "./Styles/Global/main.scss";
 
 import React, { Suspense } from "react";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga4";
 
 const Header = React.lazy(() => import("./Components/Header/Header"));
 const Footer = React.lazy(() => import("./Components/Footer/Footer"));
@@ -13,7 +13,7 @@ const Footer = React.lazy(() => import("./Components/Footer/Footer"));
 function App() {
   const TRACKING_ID = "G-HQD5ETJ34G"; 
   ReactGA.initialize(TRACKING_ID);
-  ReactGA.pageview(window.location.pathname + window.location.search);
+  ReactGA.send(window.location.pathname + window.location.search);
 
   return (
     <>

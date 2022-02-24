@@ -9,6 +9,7 @@ import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Loader from "../Loader/Loader";
 
 import React, { Suspense, useState } from "react";
+import ReactGA from "react-ga4";
 
 function Header() {
 
@@ -32,6 +33,7 @@ function Header() {
 
     function setSelected(name) {
         setActive(name);
+        ReactGA.send({ hitType: "pageview", page:"/" + name });
     }
 
 
