@@ -18,7 +18,7 @@ function Contact() {
               {data.socials.map((listitem) => (
                 <li className="contact__item" key={listitem.index}>
                     <a className="contact__link" key={listitem.index} href={listitem.link}>
-                    <FontAwesomeIcon className="contact__social contact__social--linkedin" icon={listitem.iconName} />
+                    <FontAwesomeIcon className="contact__social" icon={listitem.iconName} />
                     {listitem.name} 
                     </a>
                 </li>

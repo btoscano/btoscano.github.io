@@ -3,7 +3,11 @@ import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons/faFacebo
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
 
 const data = {
+  loader: {
+    text: "Caricamento",
+  },
   footer: {
+    title: "Beatrice Toscano",
     subtitle: "Redattrice, traduttrice e correttrice bozze",
     description: "Redattrice e traduttrice meneghina, Beatrice Toscano attualmente lavora al nuovo progetto della casa editrice Feltrinelli – IBS.it per la promozione di un social network dedicato alle novità editoriali. Grazie alla sua forte motivazione e la sua etica lavorativa, si è distinta conseguendo ottimi risultati in ambito universitario e scolastico.",
   }, 

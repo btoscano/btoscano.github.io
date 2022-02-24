@@ -1,4 +1,4 @@
-
+import data from "../../Dati";
 
 function Loader() {
 
@@ -9,7 +9,7 @@ function Loader() {
             <figure className="loader__page"></figure>
             <figure className="loader__page"></figure> 
         </div>
-        <p className="loader__text">Loading</p>
+        <p className="loader__text">{data.loader.text}</p>
      </div>
     );
   }
