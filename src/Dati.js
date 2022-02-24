@@ -101,7 +101,13 @@ const data = {
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
     mail: "btoscano95@gmail.com",
     formTitle:"Contattami",
-    img: "BeatriceToscano.png"
+    img: "BeatriceToscano.png",
+    altText: "Beatrice Toscano smiling"
+  },    
+  errorPage: {
+    title: "404",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in.",
+    backToHomepageText: "Back to home page"
   },  
   testimonials: {
     title: "Dicono di me",
@@ -150,6 +156,7 @@ const data = {
   about: {
       paragrafo: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a.",
       img: "BeatriceToscano2.png",
+      altText: "Beatrice Toscano holding her thesis",
       img1: "img_6.jpeg",
       img2: "img_2.jpeg",
       img3: "img_3.jpeg"

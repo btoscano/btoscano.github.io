@@ -15,7 +15,7 @@ function Home() {
     <section className="home__wrapper">
 
         <div className="home__leftWrapper">
-            <img className="home__img" src={data.home.img}></img>
+            <img className="home__img" src={data.home.img} alt="Beatrice Toscano smiling" width="50%" height="50%"></img>
         </div>
 
         <div className="home__rightWrapper">
@@ -31,7 +31,7 @@ function Home() {
               {data.home.imgLinks.map((listitem) => (
                 <li className="home__imgItemWrapper" key={listitem.index}>
                     <a className="home__imgItemLink" key={listitem.index} href={listitem.link}>
-                    <img className="home__imgItem" src={listitem.img} alt={listitem.altText}></img>
+                    <img className="home__imgItem" src={listitem.img} alt={listitem.altText} width="30%" height="30%"></img>
                     </a>
                 </li>
               ))}

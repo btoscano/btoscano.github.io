@@ -18,21 +18,20 @@ function About() {
       <section className="about__wrapper">
 
           <div className="about__leftWrapper">
-
-          <img className="about__img" src={data.about.img}></img>
-
-          <ul className="about__list">
-            <li className={`about__item `}>
-            <button className="about__button" onClick={experienceScroll}> Lavoro </button> 
-            </li>                
-            <li className={`about__item`}>
-            <button className="about__button" onClick={educationScroll}> Formazione </button> 
-            </li> 
-            <li className={`about__item`}>
-            <button className="about__button" onClick={acknowledgementsScroll}> Riconoscimenti </button> 
-            </li>                
-          </ul> 
-
+            <img className="about__img" alt={data.about.altText} src={data.about.img}></img>
+            <nav>
+              <ul className="about__list">
+                <li className={`about__item `}>
+                <button className="about__button" onClick={experienceScroll}> Lavoro </button> 
+                </li>                
+                <li className={`about__item`}>
+                <button className="about__button" onClick={educationScroll}> Formazione </button> 
+                </li> 
+                <li className={`about__item`}>
+                <button className="about__button" onClick={acknowledgementsScroll}> Riconoscimenti </button> 
+                </li>                
+              </ul> 
+            </nav>
         </div>
 
         <div className="about__rightWrapper">
@@ -40,9 +39,9 @@ function About() {
           <p className="about__paragraph">{data.about.paragrafo}</p>
 
           <div className="about__images" >
-          <img className="about__imgItem" src={data.about.img1}></img>
-          <img className="about__imgItem" src={data.about.img2}></img>
-          <img className="about__imgItem" src={data.about.img3}></img>
+          <img className="about__imgItem" src={data.about.img1} alt=""></img>
+          <img className="about__imgItem" src={data.about.img2} alt=""></img>
+          <img className="about__imgItem" src={data.about.img3} alt=""></img>
           </div>  
 
           <div className="about__section" ref={experience}>

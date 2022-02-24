@@ -28,6 +28,7 @@ function Footer() {
             <li>
                 <a className='footer__link' href="https://www.linkedin.com/in/beatrice-toscano/">
                 <FontAwesomeIcon className="footer__social footer__social--linkedin" icon={faLinkedinIn} />
+                <span className='sr-only'> Linkedin </span>
                 </a>
               </li>           
               {/* <li>
@@ -39,11 +40,13 @@ function Footer() {
                 {/* TODO link */}
                 <a className='footer__link' href="#">
                 <FontAwesomeIcon className="footer__social footer__social--messenger" icon={faFacebookMessenger} />
+                <span className='sr-only'> Messenger </span>
                 </a>
               </li> 
               <li>
                 <a className='footer__link' href="mailto:btoscano95@gmail.com">
                 <FontAwesomeIcon className="footer__social footer__social--email" icon={faEnvelope} />
+                <span className='sr-only'> Email </span>
                 </a>
               </li> 
           </ul>

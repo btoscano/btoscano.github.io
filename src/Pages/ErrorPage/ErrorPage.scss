@@ -1,0 +1,58 @@
+
+
+.errorPage{
+    margin-top: 80px;
+    min-height: 800px;
+}
+
+.errorPage__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+
+    @include bpmax($m) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.errorPage__rightWrapper{
+    // text-align: center;
+    padding: 32px;
+    flex: 65%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorPage__leftWrapper{
+    display: flex;
+    justify-content: center;
+    flex: 35%;
+}
+
+.errorPage__title{
+    @extend %jumbo;
+    font-size: rem(128px);
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.errorPage__subtitle{
+    @extend %occhiello;
+    margin: 0 32px;
+    margin-top: 32px;
+}
+
+.errorPage__link{
+    padding: 16px;
+    margin-top: 64px;
+    background-color: $color-link;
+    color: $color-white;
+    border-radius: 15px;
+    text-align: center;
+    width: 250px;
+}

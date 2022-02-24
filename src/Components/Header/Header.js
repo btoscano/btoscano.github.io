@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 // import About from "../../Pages/About/About";
 import Projects from "../../Pages/Projects/Projects";
 import Redazione from "../../Pages/Redazione";
-import ErrorPage from "../../Pages/ErrorPage";
+import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 
 import Loader from "../Loader/Loader";
 
@@ -75,7 +75,7 @@ function Header() {
         <Route path="/esperienza" element={<About />} />
         <Route path="/progetti" element={<Projects />} />
         <Route path="/redazione" element={<Redazione />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage func={setSelected}/>} />
       </Routes>
     </Router>
 

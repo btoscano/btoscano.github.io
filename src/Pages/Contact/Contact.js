@@ -12,7 +12,7 @@ function Contact() {
     <section className="contact__wrapper">
 
         <div className="contact__leftWrapper">
-          <img className="contact__img" src={data.contact.img}></img>
+          <img className="contact__img" alt={data.contact.altText} src={data.contact.img}></img>
           <nav>
             <ul className="contact__list" >
               {data.socials.map((listitem) => (
