@@ -56,9 +56,9 @@
 }
 
 .header__link{
-    padding: 16px;
+    padding: 16px 8px;
     text-align: center;
-
+    min-width: 103px;
     outline: 4px solid $color-white;
     outline-offset: -10px;
     outline-style: double;

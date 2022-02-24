@@ -32,10 +32,6 @@
     // text-align: center;
     padding: 32px;
     flex: 65%;
-
-    @include bpmax($m) {
-        padding: 16px;
-    }
 }
 
 .contact__title{
@@ -54,7 +50,7 @@
 
 
     @include bpmax($m) {
-        padding: 8px;
+        padding: 0px;
     }
 }
 

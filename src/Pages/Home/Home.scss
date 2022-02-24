@@ -56,6 +56,10 @@ section:nth-child(even)
     margin-bottom: 32px;
 
     @extend %tracking-in-expand;
+
+    @include bpmax($m) {
+        margin-top: 0px;
+    }
 }
 .home__subtitle{
     @extend %occhiello;

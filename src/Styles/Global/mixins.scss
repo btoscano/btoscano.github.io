@@ -5,7 +5,7 @@
 //––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
 
 @function rem($size) {
-    @return #{$size / $text-base-size}rem;
+    @return #{calc($size / $text-base-size)}rem;
 }
 
 //
