@@ -21,7 +21,7 @@ section:nth-child(even)
 
 .home__wrapper{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
     flex-direction: row;
 
@@ -31,15 +31,14 @@ section:nth-child(even)
     }
 }
 
-
-.home{
-    margin-top: 80px;
-}
-
 .home__rightWrapper{
     // text-align: center;
     padding: 32px;
-    flex: 65%;
+    width: 65%;
+
+    @include bpmax($m) {
+        width: 100%;
+    }
 }
 
 .home__sectionTitle{
@@ -51,7 +50,7 @@ section:nth-child(even)
 
 
 .home__title{
-    margin-top: 32px;
+    margin-top: 96px;
     @extend %h1;
     margin-bottom: 32px;
 
@@ -169,10 +168,19 @@ section:nth-child(even)
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex: 35%;
+    width: 35%;
+    position: sticky;
+    top: 0;
+    margin-bottom: 96px;
+    left: 0;
+
+    @include bpmax($m) {
+        position: relative;
+        width: 100%;
+        margin-bottom: 0;
+    }
 }
 .home__tagsWrapper{
-    width: 50%;
     text-align: center;
     padding: 20px;
     width: 60%;
@@ -209,6 +217,7 @@ section:nth-child(even)
 }
 
 .home__img{
+    margin-top: 80px;
     margin-bottom: 64px;
     padding-top: 100px;
     max-width: 50%;

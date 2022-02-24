@@ -1,3 +1,7 @@
+.footer{
+    position: relative;
+}
+
 .footer__subtitle{
     @extend %occhiello--small;
     @extend %occhiello--left;
@@ -111,7 +115,7 @@
     &.footer__social--Facebook{
         background-color:#0b42c2;
     }
-    
+
     &.footer__social--LinkedIn{
         background-color:#009bca;
     }
