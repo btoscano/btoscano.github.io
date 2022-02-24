@@ -31,7 +31,7 @@ function Home() {
               {data.home.imgLinks.map((listitem) => (
                 <li className="home__imgItemWrapper" key={listitem.index}>
                     <a className="home__imgItemLink" key={listitem.index} href={listitem.link}>
-                    <img className="home__imgItem" src={listitem.img}></img>
+                    <img className="home__imgItem" src={listitem.img} alt={listitem.altText}></img>
                     </a>
                 </li>
               ))}

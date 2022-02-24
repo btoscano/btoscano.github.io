@@ -4,9 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
 import emailjs from 'emailjs-com';
 
-import data from "../../Dati";
-
-function ContactForm() {
+function ContactForm({formTitle}) {
     const {
         register,
         handleSubmit,
@@ -52,7 +50,7 @@ function ContactForm() {
 
 return <>
     <form className="contactForm__form" aria-labelledby="formTitle"  onSubmit={handleSubmit(onSubmit)} >
-    <h2 className='contactForm__formTitle' id='formTitle'>{data.contact.formTitle}</h2>
+    <h2 className='contactForm__formTitle' id='formTitle'>{formTitle}</h2>
 
     <div className='contactForm__group'>
         <label className='contactForm__label' htmlFor="firstname">Nome</label>

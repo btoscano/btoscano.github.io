@@ -1,3 +1,7 @@
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
+import { faFacebookMessenger } from '@fortawesome/free-brands-svg-icons/faFacebookMessenger';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope';
+
 const data = {
   footer: {
     subtitle: "Redattrice, traduttrice e correttrice bozze",
@@ -35,37 +39,65 @@ const data = {
       {
         index: 0,
         img: "lafeltrinelli.png",
+        altText: "some alt text",
         link: "https://maremosso.lafeltrinelli.it/"
       },
       {
         index: 1,
         img: "illeoneverde.png",
+        altText: "some alt text",
         link: "https://www.leoneverde.it/"
       },
       {
         index: 2,
         img: "wecontent.png",
+        altText: "some alt text",
         link: "https://www.wecontent.com/"
       },
       {
         index: 3,
         img: "dispari.png",
+        altText: "some alt text",
         link: "https://www.studiodispari.com/"
       },
       {
         index: 4,
         img: "cives.png",
+        altText: "some alt text",
         link: "https://video.unimi.it/"
       },
       {
         index: 5,
         img: "iqm.png",
+        altText: "some alt text",
         link: "https://www.iqmselezione.it/"
       },
     ]
 
   },
+  socials: [
+    {
+      index: 0,
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/beatrice-toscano/",
+      iconName: faLinkedinIn
+    },
+    {
+      index: 1,
+      name: "Messenger",
+      link: "#TODO",
+      iconName: faFacebookMessenger
+    },
+    {
+      index: 2,
+      name: "Email",
+      link: "mailto:btoscano95@gmail.com",
+      iconName: faEnvelope
+    }
+
+  ],
   contact: {
+    title: "Contattami",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
     mail: "btoscano95@gmail.com",
     formTitle:"Contattami",
