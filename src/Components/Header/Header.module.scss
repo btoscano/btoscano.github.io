@@ -8,6 +8,14 @@
     left: 0;
     background: $color-white;
     height: 80px;
+
+    &--light{
+        background-color: yellow;
+    }    
+    
+    &--dark{
+        background-color: blue;
+    }
 }
 
 .header__wrapper{

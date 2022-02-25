@@ -6,12 +6,15 @@ import Projects from "../../Pages/Projects/Projects";
 import Redazione from "../../Pages/Redazione";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 
+import PropTypes from 'prop-types';
 import Loader from "../Loader/Loader";
 
 import React, { Suspense, useState } from "react";
 import ReactGA from "react-ga4";
 
-function Header() {
+// import '../Components/Header/Header.scss';
+
+function Header({ backgroundColor, ...props }) {
     const TRACKING_ID = "G-HQD5ETJ34G"; 
     ReactGA.initialize(TRACKING_ID);
 
@@ -43,7 +46,7 @@ function Header() {
   <Suspense maxDuration={300} fallback={<Loader />}>
 
     <Router>
-      <header className="header" id="header">
+      <header className={['header', `header--${backgroundColor}`].join(' ')} id="header">
         {/* Links */}
         <div className="header__wrapper">
           <div className="header__before"></div>
@@ -86,5 +89,22 @@ function Header() {
     </Suspense>
   );
 }
+
+
+Header.propTypes = {
+  // primary: PropTypes.bool,
+  backgroundColor: PropTypes.oneOf(['light', 'dark']),
+  // size: PropTypes.oneOf(['small', 'medium', 'large']),
+  // label: PropTypes.string.isRequired,
+  // onClick: PropTypes.func,
+};
+
+Header.defaultProps = {
+  backgroundColor: 'light',
+  // primary: false,
+  // size: 'medium',
+  // onClick: undefined,
+};
+
 
 export default Header;
