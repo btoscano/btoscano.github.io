@@ -1,6 +1,7 @@
 import data from "../../Dati";
 
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import Row from "../../Components/Row/Row";
 
 
 import parse from 'html-react-parser';
@@ -12,6 +13,12 @@ function Parser(props){
 
 function Home() {
   return  <div className="home">
+
+    <Row>
+
+
+    </Row>
+
     <section className="home__wrapper">
 
         <div className="home__leftWrapper">

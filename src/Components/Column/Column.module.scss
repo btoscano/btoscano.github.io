@@ -1,17 +1,5 @@
 
 
-.row{
-    background-color: rgb(218, 218, 218);
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-direction: row;
-
-    @include bpmax($m) {
-        flex-direction: column;
-        align-items: stretch;
-    }
-}
 .col, .col-1, .col-2,  .col-3,  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{ 
     background-color: rgba(255, 0, 255, 0.25);
 
