@@ -1,0 +1,67 @@
+
+
+.row{
+    background-color: rgb(218, 218, 218);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    @include bpmax($m) {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+.col, .col-1, .col-2,  .col-3,  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{ 
+    background-color: rgba(255, 0, 255, 0.25);
+
+    padding: $padding;
+    margin-left: $gutter;
+    margin-right: $gutter;
+
+    &:nth-child(even){
+        background-color: rgba(255, 0, 128, 0.25);
+    }
+}
+
+.col{
+    width: calc(calc(100% / 12) - $gutter * 2);
+
+    &-1{
+        width: calc(calc(100% / 12) - $gutter * 2);
+    }
+    &-2{
+        width: calc(calc(100% / 12 * 2) - $gutter * 2);
+    }
+    &-3{
+        width: calc(calc(100% / 12 * 3) - $gutter * 2);
+    }
+    &-4{
+        width: calc(calc(100% / 12 * 4) - $gutter * 2);
+    }
+    &-5{
+        width: calc(calc(100% / 12 * 5) - $gutter * 2);
+    }
+    &-6{
+        width: calc(calc(100% / 12 * 6) - $gutter * 2);
+    }
+    &-7{
+        width: calc(calc(100% / 12 * 7) - $gutter * 2);
+    }
+    &-8{
+        width: calc(calc(100% / 12 * 8) - $gutter * 2);
+    }
+    &-9{
+        width: calc(calc(100% / 12 * 9) - $gutter * 2);
+    }
+    &-10{
+        width: calc(calc(100% / 12 * 10) - $gutter * 2);
+    }
+    &-11{
+        width: calc(calc(100% / 12 * 11) - $gutter * 2);
+    }
+    &-12{
+        width: calc(calc(100% / 12 * 12) - $gutter * 2);
+    }
+
+}

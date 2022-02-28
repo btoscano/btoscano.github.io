@@ -6,6 +6,7 @@
 @import "./typography_extends.scss";
 
 // Import Modules
+@import "../../Components/Grid/Grid.module.scss";
 @import "../../Components/Header/Header.module.scss";
 @import "../../Components/Footer/Footer.module.scss";
 @import "../../Components/Loader/Loader.module.scss";
