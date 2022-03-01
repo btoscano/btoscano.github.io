@@ -15,17 +15,21 @@ export const Default = Template.bind({});
 Default.args = {
 };
 
-
 export const Wrap = Template.bind({});
+Wrap.margins = true
 Wrap.args = {
   children: <>
-    <Column size={6}/>
-    <Column size={2}/> 
-    <Column size={9}/> 
-  </>
+    <Column margins={Wrap.margins} size={6}> jbkjdwbja</Column>
+    <Column margins={Wrap.margins} size={2}> jb</Column>
+    <Column margins={Wrap.margins} size={9}> jbkjdwbja</Column>
+  </>,
+  extraClass: "row--myClass"
 };
 
-export const ExtraClass = Template.bind({});
-ExtraClass.args = {
-    extraClass: "row--myClass"
+export const FourEight = Template.bind({});
+FourEight.args = {
+  children: <>
+  <Column size={4}> jbkjdwbja</Column>
+  <Column size={8}> jb</Column>
+</>
 };

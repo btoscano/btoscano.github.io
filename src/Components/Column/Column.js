@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-export default function Column({ children, size, extraClass, ...props }) {
+export default function Column({ children, size, margins, extraClass, ...props }) {
   return (
-      <section className={[`col-${size}`, extraClass].join(' ')}>
+      <section className={[`col-${size}`, `col-${size}`+ (margins? '--margins' : '') , extraClass].join(' ')}>
         {children}
       </section>
   );
@@ -10,7 +10,8 @@ export default function Column({ children, size, extraClass, ...props }) {
 
 
 Column.propTypes = {
-    size: PropTypes.number.isRequired
+    size: PropTypes.number.isRequired,
+    margins: PropTypes.bool
 };
   
 Column.defaultProps = {
