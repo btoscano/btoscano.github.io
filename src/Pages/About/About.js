@@ -1,6 +1,8 @@
 import data from "../../Dati";
 
 import Timeline from "../../Components/Timeline/Timeline";
+import Row from '../../Components/Row/Row.js'
+import Column from '../../Components/Column/Column.js'
 
 import { useRef } from 'react';
 
@@ -15,26 +17,24 @@ function About() {
 
   return (
     <div className="about">
-      <section className="about__wrapper">
-
-          <div className="about__leftWrapper">
-            <img className="about__img" alt={data.about.altText} src={data.about.img}></img>
-            <nav>
-              <ul className="about__list">
-                <li className={`about__item `}>
-                <button className="about__button" onClick={experienceScroll}> Lavoro </button> 
-                </li>                
-                <li className={`about__item`}>
-                <button className="about__button" onClick={educationScroll}> Formazione </button> 
-                </li> 
-                <li className={`about__item`}>
-                <button className="about__button" onClick={acknowledgementsScroll}> Riconoscimenti </button> 
-                </li>                
-              </ul> 
-            </nav>
-        </div>
-
-        <div className="about__rightWrapper">
+      <Row>
+        <Column size={4} center sticky paddingBottom bgColor>
+          <img className="about__img" alt={data.about.altText} src={data.about.img}></img>
+          <nav>
+            <ul className="about__list">
+              <li className={`about__item `}>
+              <button className="about__button" onClick={experienceScroll}> Lavoro </button> 
+              </li>                
+              <li className={`about__item`}>
+              <button className="about__button" onClick={educationScroll}> Formazione </button> 
+              </li> 
+              <li className={`about__item`}>
+              <button className="about__button" onClick={acknowledgementsScroll}> Riconoscimenti </button> 
+              </li>                
+            </ul> 
+          </nav>
+        </Column>
+        <Column size={8}>
           <h1 className="about__title">Esperienza</h1>
           <p className="about__paragraph">{data.about.paragrafo}</p>
 
@@ -57,10 +57,9 @@ function About() {
             <h2 className="about__sectionTitle">Riconoscimenti</h2>
             <Timeline source={data.acknowledgements}/>
           </div>
+        </Column>
+      </Row>
 
-        </div>
-
-      </section>
     </div>
   );
 }
