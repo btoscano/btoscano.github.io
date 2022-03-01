@@ -3,6 +3,7 @@ import data from "../../Dati";
 import Timeline from "../../Components/Timeline/Timeline";
 import Row from '../../Components/Row/Row.js'
 import Column from '../../Components/Column/Column.js'
+import GroupImgs from '../../Components/GroupImgs/GroupImgs.js'
 
 import { useRef } from 'react';
 
@@ -34,15 +35,11 @@ function About() {
             </ul> 
           </nav>
         </Column>
-        <Column size={8}>
+        <Column size={8} paddingLR>
           <h1 className="about__title">Esperienza</h1>
           <p className="about__paragraph">{data.about.paragrafo}</p>
 
-          <div className="about__images" >
-          <img className="about__imgItem" src={data.about.img1} alt=""></img>
-          <img className="about__imgItem" src={data.about.img2} alt=""></img>
-          <img className="about__imgItem" src={data.about.img3} alt=""></img>
-          </div>  
+          <GroupImgs source={data.about.imgs}></GroupImgs>
 
           <div className="about__section" ref={experience}>
             <h2 className="about__sectionTitle">Esperienza</h2>

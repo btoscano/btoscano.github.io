@@ -31,30 +31,11 @@
     }
 }
 
-.about__images{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 64px;
-
-    @include bpmax($m) {
-        margin: 0;
-    }
-}
-
-.about__imgItem{
-    max-width: 30%;
-}
-
 .about__paragraph{
     @extend %paragraph--serif;
     margin-bottom: 64px;
-    padding: 0 64px;
     text-align: justify;
     text-justify: inter-word;
-
-    @include bpmax($m) {
-        padding: 0px;
-    }
 }
 
 .about__img{

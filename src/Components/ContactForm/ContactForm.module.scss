@@ -6,16 +6,15 @@
     // box-shadow: 0px 0px 10px 5px rgba(68,65,59,0.1);
     background-color: $color-light-2;
     outline: 4px solid $color-brown-grey;
-    outline-offset: -10px;
     outline-style: double;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 64px;
+    margin: 64px 0;
     padding: 32px  0;
 
     @include bpmax($m) {
-        margin: 0;
+        margin: 16px 0;
     }
 }
 

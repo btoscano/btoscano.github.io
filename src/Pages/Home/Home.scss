@@ -25,7 +25,6 @@
 .home__description{
     @extend %paragraph--serif;
     margin-bottom: 48px;
-    padding: 0 64px;
     text-align: justify;
     text-justify: inter-word;
 
@@ -41,11 +40,6 @@
     }
     i{
         font-style: italic;
-    }
-
-    @include bpmax($m) {
-        padding-left: 0;
-        padding-right: 0;
     }
 
     li{
@@ -64,7 +58,7 @@
     @extend %jumbo;
     margin-top: 64px;
     margin-bottom: 64px;
-    padding: 0 120px;
+    padding: 0 32px;
     text-align: center;
     line-height: rem(80px);
 
@@ -73,53 +67,8 @@
         line-height: 3rem;
     }
 }
-.home__line{
-    background: linear-gradient(to right, $color-white, $color-light-2, $color-link, $color-light-2, $color-white);
-    height: 3px;
-    margin:  64px;
-}
-
-.home__images{
-    display: flex;
-    justify-content: space-around;
-    margin: 0 64px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 32px;
-
-    @include bpmax($m) {
-        flex-direction: column;
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-}
-
-.home__imgItemWrapper, .home__imgItemLink{
-    display: contents;
-}
-
-.home__imgItem{
-    max-width: 30%;
-    margin-bottom: 16px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
 
 
-    &:hover, &:active {
-        -webkit-transform: scale(1.1);
-        -moz-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-        -o-transform: scale(1.1);
-        transform: scale(1.1); 
-    }
-
-    @include bpmax($xs) {
-        max-width: 70%;
-    }
-}
 
 .home__tagsWrapper{
     text-align: center;
@@ -171,48 +120,4 @@
 
 .home__img2{
     width: 100%;
-}
-
-.testimonial__list{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    position: relative;
-    text-align: center;
-    margin-bottom: 32px;
-}
-
-.testimonial__item{
-    max-width: 40%;
-    background-color: $color-light-2;
-    padding: 32px;
-    padding-top: 48px;
-    margin-top: 48px;
-    position: relative;
-    border-bottom: 2px solid $color-brown-grey;
-
-    @include bpmax($m) {
-        max-width: 90%;
-    }
-
-    &::after{
-        content: '“';
-        font-size: 64px;
-        line-height: 100px;
-        text-align: center;
-        color: $color-light-2;
-        position: absolute;
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        top: -35px;
-        background-color: $color-brown-grey;
-        left: 50%;
-        margin-left: -35px;
-      
-    }
-}
-.testimonial__person{
-    margin-top: 16px;
-    font-style: italic;
 }

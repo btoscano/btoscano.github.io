@@ -29,15 +29,9 @@
 .contact__paragraph{
     @extend %paragraph--serif;
     margin-bottom: 32px;
-    padding: 0 64px;
     text-align: justify;
     text-justify: inter-word;
     margin-bottom: 48px;
-
-
-    @include bpmax($m) {
-        padding: 0px;
-    }
 }
 
 .contact__linkWrapper{

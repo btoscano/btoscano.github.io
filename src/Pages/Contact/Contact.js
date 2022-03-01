@@ -28,7 +28,7 @@ function Contact() {
         </nav>
       </Column>
 
-      <Column size={8}>
+      <Column size={8} paddingLR>
         <h1 className="contact__title">{data.contact.title}</h1>
         <p className="contact__paragraph">{data.contact.description} </p>
         <ContactForm formTitle={data.contact.formTitle}/>        

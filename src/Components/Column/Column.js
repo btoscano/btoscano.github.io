@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function Column({ children, center, sticky, bgColor, bgLines, paddingBottom, size, margins, extraClass, ...props }) {
+export default function Column({ children, center, sticky, bgColor, paddingLR, bgLines, paddingBottom, size, margins, extraClass, ...props }) {
   return (
       <section className={[
         `col-${size}`,
@@ -10,6 +10,7 @@ export default function Column({ children, center, sticky, bgColor, bgLines, pad
         (bgColor? `col--bgColor` : ''),
         (bgLines? `col--bgLines` : ''),
         (paddingBottom? `col--paddingBottom` : ''),
+        (paddingLR? `col--paddingLR` : ''),
         extraClass
       ].join(' ')}>
         {children}

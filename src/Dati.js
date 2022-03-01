@@ -161,9 +161,23 @@ const data = {
       paragrafo: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a.",
       img: "BeatriceToscano2.png",
       altText: "Beatrice Toscano holding her thesis",
-      img1: "img_6.jpeg",
-      img2: "img_2.jpeg",
-      img3: "img_3.jpeg"
+      imgs: [
+        {
+          index: 0,
+          img: "img_3.jpeg",
+          altText: "some alt text"
+        },
+        {
+          index: 1,
+          img: "img_2.jpeg",
+          altText: "some alt text"
+        },
+        {
+          index: 2,
+          img: "img_6.jpeg",
+          altText: "some alt text"
+        }
+      ]
   },
   acknowledgements: [
     {
