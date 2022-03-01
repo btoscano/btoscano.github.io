@@ -1,7 +1,8 @@
 import data from "../../Dati";
 
 import Testimonials from "../../Components/Testimonials/Testimonials";
-import Row from "../../Components/Row/Row";
+import Row from '../../Components/Row/Row.js'
+import Column from '../../Components/Column/Column.js'
 
 
 import parse from 'html-react-parser';
@@ -15,15 +16,8 @@ function Home() {
   return  <div className="home">
 
     <Row>
-
-
-    </Row>
-
-    <section className="home__wrapper">
-
-        <div className="home__leftWrapper">
+        <Column size={4} center sticky paddingBottom bgColor>
             <img className="home__img" src={data.home.img} alt="Beatrice Toscano smiling" width="50%" height="50%"></img>
-
             <div className="home__tagsWrapper">
                 <p className="home__tags home__tags--color1">#SEO</p>
                 <p className="home__tags  home__tags--color3">#MARKETING</p>
@@ -32,9 +26,8 @@ function Home() {
                 <p className="home__tags home__tags--color5">#CMS</p>
                 <p className="home__tags home__tags--color6">#WORDPRESS</p>
             </div>
-        </div>
-
-        <div className="home__rightWrapper">
+        </Column>
+        <Column size={8}>
             <h1 className="home__title">Beatrice Toscano</h1>
             <p className="home__subtitle">{data.home.subtitle}</p>
 
@@ -80,10 +73,8 @@ function Home() {
 
             <Testimonials source={data.testimonials.list} />
 
-        </div>
-
-    </section>
-
+        </Column>
+    </Row>
 
   </div>;
 }

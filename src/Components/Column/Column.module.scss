@@ -1,20 +1,4 @@
 
-
-.col, .col-1, .col-2,  .col-3,  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{ 
-    background-color: rgba(255, 0, 255, 0.25);
-
-    padding: $padding;
-
-    &:nth-child(even){
-        background-color: rgba(255, 0, 128, 0.25);
-    }
-
-    &--margins{
-        margin-left: $gutter;
-        margin-right: $gutter;
-    }
-}
-
 .col{
     width: calc(calc(100% / 12) - $gutter * 2);
 
@@ -121,6 +105,57 @@
 
         &--margins{
             width: calc(calc(100% / 12 * 12) - $gutter * 2);
+        }
+    }
+
+}
+
+
+.col, .col-1, .col-2,  .col-3,  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12{ 
+    padding: $padding;
+
+    @include bpmax($m) {
+        width: 100%;
+    }
+
+    &--margins{
+        margin-left: $gutter;
+        margin-right: $gutter;
+    }
+
+    &--center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    &--sticky{
+        position: sticky;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        @include bpmax($m) {
+            position: relative;
+        }
+    }
+
+    &--bgColor{
+        background-color: $color-light-2;
+    }
+
+    &--bgLines{
+        background-color: $color-white;
+        background-size: 32px 32px;
+        background-image:  repeating-linear-gradient(0deg, $color-light-3, $color-light-3 2.1px, $color-white 2.1px, $color-white);
+    }
+
+
+    &--paddingBottom{
+        padding-bottom: 96px;
+
+        @include bpmax($m) {
+            padding-bottom: 0;
         }
     }
 

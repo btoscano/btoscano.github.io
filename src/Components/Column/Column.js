@@ -1,8 +1,17 @@
 import PropTypes from 'prop-types';
 
-export default function Column({ children, size, margins, extraClass, ...props }) {
+export default function Column({ children, center, sticky, bgColor, bgLines, paddingBottom, size, margins, extraClass, ...props }) {
   return (
-      <section className={[`col-${size}`, `col-${size}`+ (margins? '--margins' : '') , extraClass].join(' ')}>
+      <section className={[
+        `col-${size}`,
+        (margins? `col-${size}--margins` : '') ,
+        (center? `col--center` : ''),
+        (sticky? `col--sticky` : ''),
+        (bgColor? `col--bgColor` : ''),
+        (bgLines? `col--bgLines` : ''),
+        (paddingBottom? `col--paddingBottom` : ''),
+        extraClass
+      ].join(' ')}>
         {children}
       </section>
   );
