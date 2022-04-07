@@ -36,6 +36,30 @@
     margin-bottom: 64px;
     text-align: justify;
     text-justify: inter-word;
+
+    b, strong{
+        font-weight: 600;
+    }
+    u{
+        text-decoration:underline;
+    }
+    a{
+        color: $color-link;
+        text-decoration:underline;
+    }
+    i{
+        font-style: italic;
+    }
+
+    li{
+        line-height: rem(24px);
+    
+        &::before{
+            content: '◈';
+            font-size: rem(12px);
+            margin-right: 8px;
+        }
+    }
 }
 
 .about__img{

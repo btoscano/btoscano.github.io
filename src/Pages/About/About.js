@@ -5,7 +5,13 @@ import Row from '../../Components/Row/Row.js'
 import Column from '../../Components/Column/Column.js'
 import GroupImgs from '../../Components/GroupImgs/GroupImgs.js'
 
+import parse from 'html-react-parser';
+
 import { useRef } from 'react';
+
+function Parser(props){
+  return parse(props.toParse);
+}
 
 function About() {
   const experience = useRef(null)
@@ -37,7 +43,9 @@ function About() {
         </Column>
         <Column size={8} paddingLR>
           <h1 className="about__title">Esperienza</h1>
-          <p className="about__paragraph">{data.about.paragrafo}</p>
+          <p className="about__paragraph">
+            <Parser toParse={data.about.paragrafo} />
+          </p>
 
           <GroupImgs source={data.about.imgs}></GroupImgs>
 

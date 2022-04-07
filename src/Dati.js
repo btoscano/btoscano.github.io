@@ -102,7 +102,7 @@ const data = {
   ],
   contact: {
     title: "Contattami",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus, eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus. Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc euismod mi nunc, ut vehicula lorem fermentum a.",
+    description: "Nella speranza che il mio profilo professionale possa essere in linea con quanto state cercando oppure avete qualche curiosità sul lavoro che svolgo, <b>vi lascio il form qui sotto</b>.<br> Se invece avete un animo più social e le mail non fanno al caso vostro, <b>in fondo alla pagina trovate i link al mio profilo LinkedIn e Messanger</b>.",
     mail: "btoscano95@gmail.com",
     formTitle:"Contattami",
     img: "BeatriceToscano.png",
@@ -158,7 +158,7 @@ const data = {
     ]
   },
   about: {
-      paragrafo: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. Phasellus ultricies ante tellus,    eget eleifend ex tempus in. Duis pulvinar nulla eu quam malesuada convallis. Ut posuere, odio vel aliquet molestie, nisi eros blandit ligula, vel semper est dolor a nulla. Donec eu blandit metus.  Maecenas eu justo accumsan, lobortis tortor non, lacinia ex. Nunc  euismod mi nunc, ut vehicula lorem fermentum a.",
+      paragrafo: "Ho completato un <b>Master di secondo livello in Editoria Cartacea e Digitale</b> presso l'Università Cattolica di Milano, che mi ha permesso di acquisire <b>competenze pratiche</b> nel campo della <b>redazione</b>, della <b>traduzione</b> e della <b>correzione bozze</b>, ma più in generale mi ha dato l’opportunità di seguire le varie <b>fasi dello sviluppo di contenuti editoriali</b>, dall’<b>ideazione</b> alla <b>promozione</b>. Nel corso del master mi sono messa alla prova su diversi progetti pratici, multimediali e non, nei quali ho avuto modo di applicare quanto avevo appreso nel mio percorso accademico. Grazie alla mia forte motivazione e la mia etica lavorativa, mi sono distinta conseguendo ottimi risultati in ambito universitario e scolastico: ho ottenuto il massimo del punteggio prima nella laurea triennale in <b>Scienze Umanistiche per la Comunicazione</b> e poi in quella magistrale in Editoria, Comunicazione e Moda. Se il primo corso di laurea mi ha permesso di analizzare meglio come <b>comunicare sui diversi media</b>, il secondo mi ha aiutata a <b>rafforzare competenze di redazione</b>.",
       img: "BeatriceToscano2.png",
       altText: "Beatrice Toscano holding her thesis",
       imgs: [

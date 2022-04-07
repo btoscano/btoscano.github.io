@@ -5,6 +5,11 @@ import data from "../../Dati";
 import ContactForm from "../../Components/ContactForm/ContactForm";
 import Row from '../../Components/Row/Row.js'
 import Column from '../../Components/Column/Column.js'
+import parse from 'html-react-parser';
+
+function Parser(props){
+  return parse(props.toParse);
+}
 
 function Contact() {
 
@@ -30,7 +35,9 @@ function Contact() {
 
       <Column size={8} paddingLR>
         <h1 className="contact__title">{data.contact.title}</h1>
-        <p className="contact__paragraph">{data.contact.description} </p>
+        <p className="contact__paragraph">
+          <Parser toParse={data.contact.description} />
+        </p>
         <ContactForm formTitle={data.contact.formTitle}/>        
       </Column>
 
