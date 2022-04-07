@@ -43,9 +43,9 @@ function Home() {
 
             <h2 className="home__sectionTitle">{data.home.sectionTitle}</h2>
 
-            <p  className="home__description">
+            {/* <p  className="home__description">
                 <Parser toParse={data.home.secondDescription} />
-            </p>
+            </p> */}
 
             <div  className="home__description">
                 <Parser toParse={data.home.thirdDescription} />
@@ -58,10 +58,10 @@ function Home() {
             <Line></Line>
 
             <h2 className="home__sectionTitle">{data.testimonials.title}</h2>
-
+{/* 
             <p  className="home__description">
                 <Parser toParse={data.testimonials.description} />
-            </p>
+            </p> */}
 
             <Testimonials source={data.testimonials.list} />
 

@@ -29,6 +29,7 @@ const data = {
     <li>Conoscenza base di <b>InDesign</b>, <b>Illustrator</b>, <b>HTML/CSS</b></li>
     <li>Padronanza del pacchetto <b>Microsoft Office</b></li> 
     </ul>
+    <br>
     <p>
     <b>Italiano</b>: Madrelingua
     <br>
@@ -116,22 +117,22 @@ const data = {
   testimonials: {
     title: "Dicono di me",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. ",
-    list: [
-      {
-        index: 0,
-        person: "Lorem ipsum dolor sit amet",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. ",
-      },     
+    list: [  
       {
         index: 1,
-        person: "Lorem ipsum dolor sit amet2",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. ",
-      },      
-      {
-        index: 2,
-        person: "Lorem ipsum dolor sit amet3",
+        person: "Elisa Pantaleo, docente presso Università degli Studi di Milano",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. ",
       },
+      {
+        index: 2,
+        person: "Anita Molino, editrice e proprietaria Il Leone Verde Edizioni",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. ",
+      },
+      {
+        index: 0,
+        person: "Patricia Veltri, responsabile partnership editoriali Feltrinelli | IBS",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In laoreet nunc fermentum, rhoncus magna vel, ultrices arcu. Nam finibus velit dolor, at semper lorem mattis nec. ",
+      }  
     ]
   },
   projects: {
